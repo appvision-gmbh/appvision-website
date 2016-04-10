@@ -62,6 +62,9 @@
                     <li>
                         <a class="page-scroll" href="#partners">Partner</a>
                     </li>
+					<!--<li>
+                        <a class="page-scroll" href="#customers">Kunden</a>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#products">Produkte</a>
                     </li>
@@ -136,32 +139,61 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="partners-member">
+                    <div class="partners-member" onclick="location.href='http://www.nexirius.com'">
                         <img src="img/partners/1.jpg" class="img-responsive img-circle" alt="">
                         <h4>Nexirius</h4>
                         <p class="text-muted">Software-Firma aus Basel mit<br />über 25 Jahren Erfahrung.</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="partners-member">
+                    <div class="partners-member" onclick="location.href='http://www.tageswoche.ch'">
                         <img src="img/partners/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>TagesWoche</h4>
                         <p class="text-muted">Eine der wichtigsten Publikationen<br />aus dem Herzen Basels.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="partners-member">
-                        <img src="img/partners/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Goalgetter</h4>
-                        <p class="text-muted">Internet-Startup mit Plattform<br />für Fussball-Videos.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <!-- Customers Section --
+    <section id="customers" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Kunden</h2>
+                    <h3 class="section-subheading text-muted">Zu unseren Kunden gehören unter anderem folgende Firmen:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="partners-member">
+                        <img src="img/customers/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Nexirius</h4>
+                        <p class="text-muted">Software-Firma aus Basel mit<br />über 25 Jahren Erfahrung.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="partners-member">
+                        <img src="img/customers/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>TagesWoche</h4>
+                        <p class="text-muted">Eine der wichtigsten Publikationen<br />aus dem Herzen Basels.</p>
+                    </div>
+                </div>
+				<div class="col-sm-4">
+                    <div class="partners-member">
+                        <img src="img/customers/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Universität Basel</h4>
+                        <p class="text-muted">Eine der wichtigsten Publikationen<br />aus dem Herzen Basels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
     <!-- Products Grid Section -->
-    <section id="products">
+    <section id="products" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -170,35 +202,35 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 products-item">
+                <div class="col-md-4 col-sm-6 products-item" onclick="location.href='http://www.rotblauapp.ch/apps/'">
                     <img src="img/products/1.jpg" class="img-responsive" alt="">
                     <div class="products-caption">
                         <h4>Rotblau App</h4>
                         <p class="text-muted">Die FC Basel Fan-App Rotblau ist mit knapp 100'000 Downloads eine der beliebtesten Apps der Region Basel.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 products-item">
+                <div class="col-md-4 col-sm-6 products-item" onclick="location.href='http://www.rotblauapp.ch'">
                     <img src="img/products/2.jpg" class="img-responsive" alt="">
                     <div class="products-caption">
                         <h4>Rotblau Website</h4>
                         <p class="text-muted">Mit zehntausenden Besuchen monatlich ist die Rotblau Website eine feste Grösse im FCB-Universum.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 products-item">
+                <div class="col-md-4 col-sm-6 products-item" onclick="location.href='http://www.anton-webern.ch'">
                     <img src="img/products/3.jpg" class="img-responsive" alt="">
                     <div class="products-caption">
                         <h4>Anton-Webern</h4>
                         <p class="text-muted">Für die Musikwissenschaften der Universität Basel entwickelten wir eine Editions-Plattform.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 products-item">
+                <div class="col-md-4 col-sm-6 products-item" onclick="location.href='http://www.orpheus-reisen.ch'">
                     <img src="img/products/4.jpg" class="img-responsive" alt="">
                     <div class="products-caption">
                         <h4>Orpheus-Reisen</h4>
                         <p class="text-muted">Seit vielen Jahren betreuen wir die Administration der Kulturreisen von Orpheus-Reisen.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 products-item">
+                <div class="col-md-4 col-sm-6 products-item" onclick="location.href='http://www.orgel-basel.ch'">
                     <img src="img/products/5.jpg" class="img-responsive" alt="">
                     <div class="products-caption">
                         <h4>Orgel-Basel</h4>
@@ -228,7 +260,11 @@
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
