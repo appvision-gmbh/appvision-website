@@ -1,0 +1,28 @@
+@import "src/variables";
+
+.header {
+    width: 100%;
+    min-width: 300px;
+
+    img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+
+        @include media-breakpoint-up(sm) {
+            height: 12.5rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 15rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 17.5rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 20rem;
+        }
+    }
+}

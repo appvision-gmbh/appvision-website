@@ -1,0 +1,12 @@
+@import "src/variables";
+
+nav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    .navbar-brand {
+        img {
+            height: 2.5rem;
+        }
+    }
+}
