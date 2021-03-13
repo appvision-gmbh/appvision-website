@@ -15,7 +15,3 @@ jobs:
         run: npm run lint
       - name: Run Build
         run: npm run build -- --prod
-      - name: Run Test
-        run: npm test -- --configuration=production
-      - name: Run E2E
-        run: npm run e2e -- --configuration=production
