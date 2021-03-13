@@ -11,6 +11,7 @@ import { ProductsComponent } from './view/pages/products/products.component';
 import { IconsComponent } from './view/components/icons/icons.component';
 import { CompanyComponent } from './view/pages/company/company.component';
 import { ServicesComponent } from './view/pages/services/services.component';
+import { ListComponent } from './view/components/list/list.component';
 
 @NgModule({
     declarations: [
@@ -22,6 +23,7 @@ import { ServicesComponent } from './view/pages/services/services.component';
         IconsComponent,
         CompanyComponent,
         ServicesComponent,
+        ListComponent,
     ],
     imports: [
         BrowserModule,
