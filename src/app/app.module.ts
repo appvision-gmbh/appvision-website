@@ -4,10 +4,13 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './view/footer/footer.component';
-import { HomeComponent } from './view/home/home.component';
-import { MenuComponent } from './view/menu/menu.component';
-import { ProductsComponent } from './view/products/products.component';
+import { FooterComponent } from './view/components/footer/footer.component';
+import { HomeComponent } from './view/pages/home/home.component';
+import { MenuComponent } from './view/components/menu/menu.component';
+import { ProductsComponent } from './view/pages/products/products.component';
+import { IconsComponent } from './view/components/icons/icons.component';
+import { CompanyComponent } from './view/pages/company/company.component';
+import { ServicesComponent } from './view/pages/services/services.component';
 
 @NgModule({
     declarations: [
@@ -16,6 +19,9 @@ import { ProductsComponent } from './view/products/products.component';
         HomeComponent,
         FooterComponent,
         ProductsComponent,
+        IconsComponent,
+        CompanyComponent,
+        ServicesComponent,
     ],
     imports: [
         BrowserModule,

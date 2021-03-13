@@ -1,0 +1,11 @@
+<div class="row">
+    <div *ngFor="let d of data" class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <div class="image">
+            <img [src]="d.imageSrc" [ngClass]="d.rounded ? 'rounded-circle' : ''" class="border" alt="icon">
+        </div>
+        <div *ngIf="d.title || d.text" class="info">
+            <div class="title">{{ d.title }}</div>
+            <div class="text">{{ d.text }}</div>
+        </div>
+    </div>
+</div>
