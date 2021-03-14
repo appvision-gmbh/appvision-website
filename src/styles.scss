@@ -6,6 +6,10 @@
 // Import Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+p {
+    margin-bottom: 0.5rem;
+}
+
 .container {
     min-width: 300px;
 

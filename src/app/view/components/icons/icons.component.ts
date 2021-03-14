@@ -8,7 +8,7 @@ export type IconsData = {
 };
 
 @Component({
-    selector: 'app-icons',
+    selector: 'app-icons[data]',
     templateUrl: './icons.component.html',
     styleUrls: ['./icons.component.scss'],
 })

@@ -7,7 +7,7 @@ export type ListItem = {
 };
 
 @Component({
-    selector: 'app-list',
+    selector: 'app-list[items]',
     templateUrl: './list.component.html',
     styleUrls: ['./list.component.scss'],
 })

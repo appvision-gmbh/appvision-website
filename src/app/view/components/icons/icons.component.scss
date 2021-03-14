@@ -1,25 +1,35 @@
 @import "src/variables";
 
-col {
-    margin-bottom: 30px;
-}
+.row {
 
-.image {
+    .row-col {
 
-    img {
-        width: 100%;
-    }
-}
+        @include media-breakpoint-down(xs) {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-.info {
-    margin-top: map-get($spacers, 3);
-    text-align: center;
+        max-width: 300px;
 
-    .title {
-        font-weight: $font-weight-bold;
-    }
+        .image {
+            padding: 0 30px;
 
-    .text {
-        color: $text-muted;
+            img {
+                width: 100%;
+            }
+        }
+
+        .info {
+            margin-top: map-get($spacers, 3);
+            text-align: center;
+
+            .title {
+                font-weight: $font-weight-bold;
+            }
+
+            .text {
+                color: $text-muted;
+            }
+        }
     }
 }

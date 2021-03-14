@@ -13,7 +13,7 @@ export class ProductsComponent implements OnInit {
         text: 'SafeLog wurde von AppVision in der Schweiz entwickelt und mit Experten für das Case Management optimiert.',
     }, {
         ionicon: 'laptop-outline',
-        text: 'Alle Funktionen sind an jedem beliebigem Standort mit einem interneFähigen Gerät über den Browser verfügbar.',
+        text: 'Alle Funktionen sind an jedem beliebigem Standort mit einem internernetfähigen Gerät über den Browser verfügbar.',
     }, {
         ionicon: 'people-outline',
         text: 'Angenehmer Arbeitseinstieg dank einer übersichtlichen Darstellung aller erfassten Personen, Fälle und einzelner Dossiers.',
