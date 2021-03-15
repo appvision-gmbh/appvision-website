@@ -14,6 +14,7 @@ export type ListItem = {
 export class ListComponent implements OnInit {
 
     @Input() items: ListItem[] = [];
+    @Input() width = '30rem';
 
     constructor() { }
 

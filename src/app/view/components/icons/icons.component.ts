@@ -15,6 +15,8 @@ export type IconsData = {
 export class IconsComponent implements OnInit {
 
     @Input() data: IconsData[] = [];
+    @Input() grayscale = false;
+    @Input() size: 'sm' | 'lg' = 'lg';
 
     constructor() { }
 

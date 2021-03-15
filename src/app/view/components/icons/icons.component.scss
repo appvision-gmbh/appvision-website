@@ -2,6 +2,27 @@
 
 .row {
 
+    &.row-small {
+        .row-col {
+            .image {
+            }
+        }
+    }
+
+    &.row-large {
+        .row-col {
+            .image {
+                padding: 0 30px;
+            }
+        }
+    }
+
+    &.grayscale {
+        img {
+            filter: grayscale(100%);
+        }
+    }
+
     .row-col {
 
         @include media-breakpoint-down(xs) {
@@ -12,8 +33,6 @@
         max-width: 300px;
 
         .image {
-            padding: 0 30px;
-
             img {
                 width: 100%;
             }

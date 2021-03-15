@@ -1,4 +1,4 @@
-<div class="list">
+<div class="list" [style.max-width]="width">
 
     <div *ngFor="let item of items" class="mb-3">
         <div class="d-flex">
@@ -6,7 +6,7 @@
                 <ion-icon *ngIf="item.ionicon" [name]="item.ionicon"></ion-icon>
                 <img *ngIf="!item.ionicon && item.imageSrc" [src]="item.imageSrc" alt="image"/>
             </div>
-            <div class="text">{{ item.text }}</div>
+            <div class="text"><p [innerHTML]="item.text"></p></div>
         </div>
     </div>
 
