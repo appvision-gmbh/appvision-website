@@ -6,12 +6,22 @@
 // Import Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+h1, h2, h3, h4, h5 {
+    word-break: break-all;
+}
+
 p {
     margin-bottom: 0.5rem;
+
+    &.max-width-large {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $width-large;
+    }
 }
 
 .container {
-    min-width: 300px;
+    min-width: $width-small;
 
     img {
         max-width: 100%;
