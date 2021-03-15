@@ -1,7 +1,8 @@
 <div *ngIf="size === 'lg'" class="row row-large" [ngClass]="grayscale ? 'grayscale' : ''">
     <div *ngFor="let d of data; let i = index" class="row-col col-lg-3 col-md-4 col-sm-6 mb-3">
         <div class="image">
-            <img [src]="d.imageSrc" [ngClass]="d.rounded ? 'rounded-circle' : ''" class="border" alt="icon">
+            <img [src]="d.imageSrc"
+                 [ngClass]="(d.rounded ? 'rounded-circle' : '') + ' ' + border" alt="icon">
         </div>
         <div *ngIf="d.title || d.text" class="info">
             <div class="title">{{ d.title }}</div>
@@ -12,7 +13,7 @@
 <div *ngIf="size === 'sm'" class="row row-small" [ngClass]="grayscale ? 'grayscale' : ''">
     <div *ngFor="let d of data; let i = index" class="row-col col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
         <div class="image">
-            <img [src]="d.imageSrc" [ngClass]="d.rounded ? 'rounded-circle' : ''" class="border" alt="icon">
+            <img [src]="d.imageSrc" [ngClass]="(d.rounded ? 'rounded-circle' : '') + ' ' + border" alt="icon">
         </div>
         <div *ngIf="d.title || d.text" class="info">
             <div class="title">{{ d.title }}</div>
