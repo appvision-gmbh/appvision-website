@@ -1,28 +1,38 @@
 <div class="menu-background"></div>
 
-<div class="bg-light">
+<div class="">
     <div class="container py-5 text-center">
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Dienstleistungen</h1>
-            <p class="text-muted">lll</p>
+            <p class="text-muted">
+                Die AppVision GmbH erbringt Dienstleistungen für Behörden und Firmen im Bereich Informationstechnologie und Naturwissenschaften.
+                Wir bieten unter anderem folgende Dienstleistungen:
+            </p>
         </div>
+
+        <app-list [items]="services" [width]="'40rem'"></app-list>
+
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Technologien</h1>
+            <p class="text-muted">
+                AppVision ist spezialisiert auf die Architektur und Entwicklung von komplexen Softwareprojekten, insbesondere von Webapplikationen.
+                Wir setzen vor allem auf die folgenden Technologien und Sprachen:
+            </p>
+        </div>
+
+        <app-icons [data]="technologies" [size]="'sm'"></app-icons>
 
     </div>
 </div>
 
 <div class="">
-    <div class="container py-5 text-center">
-
-        <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Technologien</h1>
-            <p class="text-muted">jjjj</p>
-        </div>
-
-    </div>
-</div>
-
-<div class="bg-light">
     <div class="container py-5 text-center">
 
         <div class="mb-5">
@@ -32,15 +42,3 @@
 
     </div>
 </div>
-
-<div class="">
-    <div class="container py-5 text-center">
-
-        <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Kunden</h1>
-            <p class="text-muted">lll</p>
-        </div>
-
-    </div>
-</div>
-
