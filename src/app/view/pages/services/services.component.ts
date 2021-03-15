@@ -9,23 +9,9 @@ import { ListItem } from '../../components/list/list.component';
 })
 export class ServicesComponent implements OnInit {
 
-    technologies: IconsData[] = [
-        {imageSrc: 'assets/services/technologies/angular.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/c-sharp.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/css.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/html5.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/java.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/javascript.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/matlab.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/mysql.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/php.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/sql.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/swift.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/typescript.png', rounded: false},
-    ];
     services: ListItem[] = [
         {
-            imageSrc: 'assets/safelog/logo.png',
+            imageSrc: 'assets/logo-safelog.png',
             text: '<strong>SafeLog</strong>: SafeLog ist eine moderne Webapplikation für Ihr Case Management. AppVision offeriert' +
                 ' umfangreiche Dienstleistungen rund um Ihre Bedürfnisse zu SafeLog.',
         },
@@ -43,6 +29,49 @@ export class ServicesComponent implements OnInit {
             ionicon: 'help-outline',
             text: '<strong>Consulting</strong>: Wir analysieren Ihre Bedürfnisse, um eine bestmögliche Lösung für Ihr Projekt zu' +
                 ' definieren. Wir unterstützen Sie bei der Evaluation, Architektur oder Entwicklung von Software.',
+        },
+    ];
+
+    technologies: IconsData[] = [
+        {imageSrc: 'assets/services/technologies/angular.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/c-sharp.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/css.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/html.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/java.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/javascript.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/mariadb.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/matlab.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/node-js.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/php.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/sql.png', rounded: false},
+        {imageSrc: 'assets/services/technologies/typescript.png', rounded: false},
+    ];
+
+    projects: IconsData[] = [
+        {
+            imageSrc: 'assets/services/projects/das-team.png',
+            rounded: false,
+            title: 'Das-Team-App',
+            text: 'Zu einer vom Kunden vordefinierten API entwickelten wir eine native App für iOS und Android.',
+        },
+        {
+            imageSrc: 'assets/services/projects/rotblau.png',
+            rounded: false,
+            title: 'Rotblau-App',
+            text: 'Die von uns entwickelte Rotblau-App ist mit über 110\'000 Downloads eine der beliebtesten Apps der Schweiz.',
+        },
+        {
+            imageSrc: 'assets/services/projects/st-jakob-park.png',
+            rounded: false,
+            title: 'Bestellung Shopping Center',
+            text: 'Für das Shopping Center St. Jakob-Park implementierten wir eine Bestellplattform mit Bezahlungsoption.',
+        },
+        {
+            imageSrc: 'assets/services/projects/wegweiser.png',
+            rounded: false,
+            title: 'Wegweiser',
+            text: 'Als Safelog-Modul entwickelten wir für den Kanton Aargau die Plattform «Wegweiser» für die Brückenangebote nach dem' +
+                ' 9. Schuljahr.',
         },
     ];
 
