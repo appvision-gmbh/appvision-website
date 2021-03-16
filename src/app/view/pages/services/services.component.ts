@@ -34,16 +34,22 @@ export class ServicesComponent implements OnInit {
 
     technologies: IconsData[] = [
         {imageSrc: 'assets/technologies/angular.png', rounded: false},
+        {imageSrc: 'assets/technologies/bootstrap.png', rounded: false},
         {imageSrc: 'assets/technologies/c-sharp.png', rounded: false},
         {imageSrc: 'assets/technologies/css.png', rounded: false},
+        {imageSrc: 'assets/technologies/docker.png', rounded: false},
+        {imageSrc: 'assets/technologies/github.png', rounded: false},
         {imageSrc: 'assets/technologies/html.png', rounded: false},
+        {imageSrc: 'assets/technologies/ionic.png', rounded: false},
         {imageSrc: 'assets/technologies/java.png', rounded: false},
         {imageSrc: 'assets/technologies/javascript.png', rounded: false},
         {imageSrc: 'assets/technologies/mariadb.png', rounded: false},
         {imageSrc: 'assets/technologies/matlab.png', rounded: false},
         {imageSrc: 'assets/technologies/node-js.png', rounded: false},
         {imageSrc: 'assets/technologies/php.png', rounded: false},
+        {imageSrc: 'assets/technologies/python.png', rounded: false},
         {imageSrc: 'assets/technologies/sql.png', rounded: false},
+        {imageSrc: 'assets/technologies/swift.png', rounded: false},
         {imageSrc: 'assets/technologies/typescript.png', rounded: false},
     ];
 
