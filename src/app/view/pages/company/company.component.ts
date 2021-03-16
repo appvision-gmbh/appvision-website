@@ -10,62 +10,62 @@ import { IconsData } from '../../components/icons/icons.component';
 export class CompanyComponent implements OnInit {
 
     customersData: IconsData[] = [{
-        imageSrc: 'assets/customers/kanton_aargau.jpg',
+        imageSrc: 'assets/customers/kanton_aargau.png',
         rounded: true,
         title: 'Kanton Aargau',
     }, {
-        imageSrc: 'assets/customers/kanton_basel-landschaft.jpg',
+        imageSrc: 'assets/customers/kanton_basel-landschaft.png',
         rounded: true,
         title: 'Kanton Basel-Landschaft',
     }, {
-        imageSrc: 'assets/customers/kanton_basel-stadt.jpg',
+        imageSrc: 'assets/customers/kanton_basel-stadt.png',
         rounded: true,
         title: 'Kanton Basel-Stadt',
     }, {
-        imageSrc: 'assets/customers/kanton_schaffhausen.jpg',
+        imageSrc: 'assets/customers/kanton_schaffhausen.png',
         rounded: true,
         title: 'Kanton Schaffhausen',
     }, {
-        imageSrc: 'assets/customers/bz-basel.jpg',
+        imageSrc: 'assets/customers/bz-basel.png',
         rounded: true,
         title: 'bz Basel',
     }, {
-        imageSrc: 'assets/customers/das-team.jpg',
+        imageSrc: 'assets/customers/das-team.png',
         rounded: true,
         title: 'das team',
     }, {
-        imageSrc: 'assets/customers/fc-basel.jpg',
+        imageSrc: 'assets/customers/fc-basel.png',
         rounded: true,
         title: 'FC Basel 1893',
     }, {
-        imageSrc: 'assets/customers/nexirius.jpg',
+        imageSrc: 'assets/customers/nexirius.png',
         rounded: true,
         title: 'Nexirius',
     }, {
-        imageSrc: 'assets/customers/orpheus-reisen.jpg',
+        imageSrc: 'assets/customers/orpheus-reisen.png',
         rounded: true,
         title: 'Orpheus-Reisen',
     }, {
-        imageSrc: 'assets/customers/otb-applications.jpg',
+        imageSrc: 'assets/customers/otb-applications.png',
         rounded: true,
         title: 'OTB Applications',
     }, {
-        imageSrc: 'assets/customers/shopping-center-st-jakob-park.jpg',
+        imageSrc: 'assets/customers/st-jakob-park.png',
         rounded: true,
         title: 'Shopping Center St. Jakob-Park',
     }, {
-        imageSrc: 'assets/customers/universitaet-basel.jpg',
+        imageSrc: 'assets/customers/universitaet-basel.png',
         rounded: true,
         title: 'Universität Basel',
     }];
 
     partnersData: IconsData[] = [{
-        imageSrc: 'assets/partners/nexirius.jpg',
+        imageSrc: 'assets/partners/nexirius.png',
         rounded: true,
         title: 'Nexirius GmbH',
         text: 'Software-Firma mit über 25 Jahren Erfahrung.',
     }, {
-        imageSrc: 'assets/partners/otb.jpg',
+        imageSrc: 'assets/partners/otb-applications.png',
         rounded: true,
         title: 'OTB Applications',
         text: 'Distributionspartner von SafeLog für Kitas, Schulen, Heimen, usw.',

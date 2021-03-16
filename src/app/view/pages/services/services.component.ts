@@ -33,41 +33,41 @@ export class ServicesComponent implements OnInit {
     ];
 
     technologies: IconsData[] = [
-        {imageSrc: 'assets/services/technologies/angular.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/c-sharp.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/css.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/html.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/java.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/javascript.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/mariadb.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/matlab.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/node-js.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/php.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/sql.png', rounded: false},
-        {imageSrc: 'assets/services/technologies/typescript.png', rounded: false},
+        {imageSrc: 'assets/technologies/angular.png', rounded: false},
+        {imageSrc: 'assets/technologies/c-sharp.png', rounded: false},
+        {imageSrc: 'assets/technologies/css.png', rounded: false},
+        {imageSrc: 'assets/technologies/html.png', rounded: false},
+        {imageSrc: 'assets/technologies/java.png', rounded: false},
+        {imageSrc: 'assets/technologies/javascript.png', rounded: false},
+        {imageSrc: 'assets/technologies/mariadb.png', rounded: false},
+        {imageSrc: 'assets/technologies/matlab.png', rounded: false},
+        {imageSrc: 'assets/technologies/node-js.png', rounded: false},
+        {imageSrc: 'assets/technologies/php.png', rounded: false},
+        {imageSrc: 'assets/technologies/sql.png', rounded: false},
+        {imageSrc: 'assets/technologies/typescript.png', rounded: false},
     ];
 
     projects: IconsData[] = [
         {
-            imageSrc: 'assets/services/projects/das-team.png',
+            imageSrc: 'assets/projects/das-team.png',
             rounded: false,
             title: 'Das-Team-App',
             text: 'Zu einer vom Kunden vordefinierten API entwickelten wir eine native App für iOS und Android.',
         },
         {
-            imageSrc: 'assets/services/projects/rotblau.png',
+            imageSrc: 'assets/projects/rotblau.png',
             rounded: false,
             title: 'Rotblau-App',
             text: 'Die von uns entwickelte Rotblau-App ist mit über 110\'000 Downloads eine der beliebtesten Apps der Schweiz.',
         },
         {
-            imageSrc: 'assets/services/projects/st-jakob-park.png',
+            imageSrc: 'assets/projects/st-jakob-park.png',
             rounded: false,
-            title: 'Bestellung Shopping Center',
-            text: 'Für das Shopping Center St. Jakob-Park implementierten wir eine Bestellplattform mit Bezahlungsoption.',
+            title: 'Shopping Center',
+            text: 'Für das Shopping Center St. Jakob-Park implementierten wir eine Bestellplattform mit Bezahlungssystem.',
         },
         {
-            imageSrc: 'assets/services/projects/wegweiser.png',
+            imageSrc: 'assets/projects/wegweiser.png',
             rounded: false,
             title: 'Wegweiser',
             text: 'Als Safelog-Modul entwickelten wir für den Kanton Aargau die Plattform «Wegweiser» für die Brückenangebote nach dem' +
