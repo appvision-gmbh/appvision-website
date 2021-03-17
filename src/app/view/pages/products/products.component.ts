@@ -48,14 +48,38 @@ export class ProductsComponent implements OnInit {
             ' Sicherheit.',
     }];
 
-    images: { url: string, title: string, text: string }[] = [{
-        url: 'assets/products/safelog/showcase.png',
-        title: 'a',
-        text: 'b',
+    images: { url: string, text: string }[] = [{
+        url: 'assets/products/safelog/gallery/dashboard1.png',
+        text: 'Auf dem Dashboard sehen Sie den Status Ihrer Fälle auf einen Blick.',
     }, {
-        url: 'assets/products/safelog/showcase.png',
-        title: 'a',
-        text: 'b',
+        url: 'assets/products/safelog/gallery/dashboard2.png',
+        text: 'Ebenfalls auf dem Dashboard sehen Sie Ihren Kalender, Aufgaben, Notizen und einen Direkteinstieg in Ihre Fälle.',
+    }, {
+        url: 'assets/products/safelog/gallery/cases.png',
+        text: 'Eine einfache Fallübersicht gibt Ihnen einen effizienten Einstieg in den Arbeitsalltag.',
+    }, {
+        url: 'assets/products/safelog/gallery/search.png',
+        text: 'Die intelligente Filtersuche erlaubt Ihnen das Filtern und Suchen nach verschiedensten Eigenschaften.',
+    }, {
+        url: 'assets/products/safelog/gallery/case.png',
+        text: 'Ein Falldossier besteht aus einer einzigen Seite, die alle Daten auf einen Blick anzeigt. Links befinden sich statische' +
+            ' Daten, rechts befinden sich dynamische Daten mit einer chronologischen Timeline.',
+    }, {
+        url: 'assets/products/safelog/gallery/templates.png',
+        text: 'Erstellen Sie Word-Vorlagen, um aus den Falldaten automatische Briefe zu generieren. Diese können ausgedruckt oder in den' +
+            ' Fällen abgelegt werden..',
+    }, {
+        url: 'assets/products/safelog/gallery/stats.png',
+        text: 'Generieren Sie jederzeit Statistiken zu einer beliebigen Zeitspanne. Es existieren Statistiken zu Beratungen, Personen,' +
+            ' Fällen, Ansprechpersonen (der Fälle) und der SafeLog-Benutzer.',
+    }, {
+        url: 'assets/products/safelog/gallery/processes.png',
+        text: 'Als Administrator definieren Sie die Abläufe Ihrer Fälle. Zu jedem Falltyp können Prozessschritte definierten werden.' +
+            ' Verschiedene Farben helfen Ihnen bei der Orientierung während der Arbeit mit den Fällen.',
+    }, {
+        url: 'assets/products/safelog/gallery/maintenance.png',
+        text: 'Fehler passieren schnell einmal. In einem speziellen Wartungs-Menü zeigt Ihnen SafeLog mögliche Probleme mit Ihren Daten' +
+            ' an.',
     }];
 
     clients: GridItem[] = [{

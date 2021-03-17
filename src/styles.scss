@@ -50,3 +50,15 @@ strong {
     width: 100%;
     height: $menu-height;
 }
+
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.carousel-indicators {
+    filter: invert(1);
+}

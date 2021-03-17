@@ -1,16 +1,16 @@
 @import "src/variables";
 
+.carousel {
+    max-width: 800px;
+    margin: auto;
+}
 .carousel-caption {
 
     .text {
         padding: $spacer-3;
         border: 1px solid $border-color;
-        background: rgba($black, 0.9);
+        background: rgba($primary, 0.9);
         color: $white;
-
-        h3, p {
-            color: inherit;
-        }
     }
 }
 
