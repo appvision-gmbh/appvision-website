@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IconsData } from '../../components/icons/icons.component';
 import { ListItem } from '../../components/list/list.component';
 
 @Component({
@@ -14,17 +15,37 @@ export class HomeComponent implements OnInit {
             ' von mobilen Applikationen, Webapplikationen und Software. ',
     }, {
         ionicon: 'eye-outline',
-        text: '<strong>Vision</strong>: Wir unterstützen Sie dabei, Ihre «Vision» in die Realität umzusetzen. Mithilfe unseres' +
+        text: '<strong>Vision</strong>: Wir unterstützen Sie, Ihre «Vision» in die Realität umzusetzen. Mithilfe unseres' +
             ' fundierten Know-hows in verschiedensten Technologien entwickeln wir Ihr Wunschprojekt professionell und effizient.',
     }, {
-        ionicon: 'mail-outline',
-        text: '<strong>Kontakt</strong>: Unser Unternehmen mit Sitz in Reinach BL steht Ihnen gerne zur Verfügung. Gerne beraten wir Sie' +
+        ionicon: 'briefcase-outline',
+        text: '<strong>GmbH</strong>: Unser Unternehmen mit Sitz in Reinach BL steht Ihnen gerne zur Verfügung. Gerne beraten wir Sie' +
             ' persönlich und unverbindlich per Telefon, E-Mail oder bei Ihnen vor Ort.',
+    }];
+
+    offersData: IconsData[] = [{
+        imageSrc: 'assets/safelog.png',
+        title: 'SafeLog',
+        text: 'SafeLog ist eine moderne Webapplikation für Ihr Case Management. Die Applikation wurde von AppVision entwickelt' +
+            ' und gemeinsam mit Experten optimiert. Sie ist seit mehreren Jahren bei verschiedenen Institutionen erfolgreich im Einsatz.',
+        link: 'safelog',
+        linkText: 'Mehr dazu',
+    }, {
+        imageSrc: 'assets/services.png',
+        title: 'Dienstleistungen',
+        text: 'AppVision bietet im Bereich Informationstechnologie und Naturwissenschaften verschiedene Dienstleistungen an. Wir sind' +
+            ' spezialisiert auf die Entwicklung von Webapplikationen und nativen Apps für iOS/Android.',
+        link: 'services',
+        linkText: 'Mehr dazu',
     }];
 
     constructor() { }
 
     ngOnInit(): void {
+    }
+
+    openGoogleMaps(): void {
+        window.open('https://www.google.com/maps/place/AppVision+GmbH/@47.4887406,7.5993231,15z/data=!4m5!3m4!1s0x0:0xf3912539f26d6ab4!8m2!3d47.4886888!4d7.5993087');
     }
 
 }

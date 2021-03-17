@@ -7,8 +7,7 @@
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">AppVision GmbH</h1>
-            <p class="max-width-large text-muted">
-                Willkommen bei AppVision GmbH.</p>
+            <p class="max-width-large text-muted">Bei uns ist der Name Programm.</p>
         </div>
 
         <app-list [items]="welcomeItems" [width]="'40rem'"></app-list>
@@ -29,13 +28,12 @@
             Christoph Merian-Ring 11<br/>
             4153 Reinach BL<br/><br/>
             Telefon: <a href="tel:0041615623333">+41 61 562 33 33</a><br/>
-            E-Mail: <a href="mailto:info@appvision.ch">info@appvision.ch</a><br/><br/>
-            CHE-467.026.673 MWST
+            E-Mail: <a href="mailto:info@appvision.ch">info@appvision.ch</a>
         </p>
 
     </div>
 
-    <div class="banner">
+    <div class="banner cursor-pointer" (click)="openGoogleMaps()">
         <img src="assets/location.png" alt="map">
     </div>
 
@@ -46,11 +44,10 @@
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Angebote</h1>
-            <p class="max-width-large text-muted">
-                Willkommen bei AppVision GmbH.</p>
+            <p class="max-width-large text-muted">An welchen Angeboten sind Sie interessiert?</p>
         </div>
 
-        SafeLog, Dienstleistungen
+        <app-icons [data]="offersData" [size]="'xl'" [border]="''"></app-icons>
 
     </div>
 </div>
