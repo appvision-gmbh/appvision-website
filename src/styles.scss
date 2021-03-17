@@ -15,11 +15,12 @@
 @import "~@fontsource/open-sans/700.css";
 
 h1, h2, h3, h4, h5 {
-    word-break: break-all;
+    color: $primary;
+    word-break: break-word;
 }
 
 p {
-    margin-bottom: 0.5rem;
+    margin-bottom: $spacer-2;
 
     &.max-width-large {
         margin-left: auto;
@@ -28,12 +29,20 @@ p {
     }
 }
 
+strong {
+    font-weight: 600;
+}
+
 .container {
     min-width: $width-small;
 
     img {
         max-width: 100%;
     }
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 .menu-background {
