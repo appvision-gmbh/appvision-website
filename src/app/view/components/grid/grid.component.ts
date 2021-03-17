@@ -3,19 +3,20 @@ import { Router } from '@angular/router';
 
 export type GridItem = {
     // The column formatting
-    colCssClass?: string,
+    colCssClass?: string, // grid only
     // Image
-    imageSrc?: string, // use either imageSrc or ionicon
-    ionicon?: string, // use either imageSrc or ionicon
+    imageSrc?: string, // use either imageSrc, ionicon or imageText
+    ionicon?: string, // use either imageSrc, ionicon or imageText
+    imageText?: string, // use either imageSrc, ionicon or imageText
     imageRounded?: boolean,
     imageBorder?: boolean,
-    imagePadding?: string,
+    imagePadding?: string, // grid only
     // Text below / beside image
     title?: string,
     text?: string,
     // Url below text
-    url?: string,
-    urlText?: string,
+    url?: string, // grid only
+    urlText?: string, // grid only
 };
 
 @Component({
@@ -31,12 +32,18 @@ export class GridComponent {
 
     constructor(private router: Router) { }
 
-    openUrl(url: string): void {
+    openUrl(url: string | undefined): void {
+
+        if (!url) {
+            return;
+        }
+
         if (url.startsWith('http')) {
             window.open(url);
         } else {
             this.router.navigate([url]);
         }
+
     }
 
     getImageCssClass(item: GridItem): string {

@@ -3,7 +3,9 @@
     <div class="row row-large">
         <div *ngFor="let item of items; let i = index" class="row-col mb-4"
              [ngClass]="item.colCssClass ? item.colCssClass : 'col-lg-2 col-md-3 col-sm-4 col-6'">
-            <div *ngIf="item.ionicon || item.imageSrc" class="image" [style.padding]="item.imagePadding">
+            <div *ngIf="item.ionicon || item.imageSrc" class="image" [style.padding]="item.imagePadding"
+                 [ngClass]="item.url ? 'cursor-pointer' : ''"
+                 (click)="openUrl(item.url)">
                 <ion-icon *ngIf="item.ionicon" [name]="item.ionicon"
                           [ngClass]="getImageCssClass(item)"></ion-icon>
                 <img *ngIf="!item.ionicon && item.imageSrc" [src]="item.imageSrc"
@@ -29,13 +31,14 @@
 
     <div *ngFor="let item of items" class="mb-3">
         <div class="d-flex">
-            <div *ngIf="item.ionicon || item.imageSrc" class="image flex-shrink-0 flex-grow-0"
+            <div *ngIf="item.ionicon || item.imageSrc || item.imageText" class="image flex-shrink-0 flex-grow-0"
                  [ngClass]="getImageCssClass(item)">
                 <ion-icon *ngIf="item.ionicon" [name]="item.ionicon"></ion-icon>
                 <img *ngIf="!item.ionicon && item.imageSrc" [src]="item.imageSrc" alt="image"/>
+                <span *ngIf="item.imageText">{{ item.imageText }}</span>
             </div>
             <div *ngIf="item.title || item.text" class="text"
-                 [ngClass]="!item.ionicon && !item.imageSrc ? 'pl-0' : ''">
+                 [ngClass]="!item.ionicon && !item.imageSrc && !item.imageText ? 'pl-0' : ''">
                 <p><strong *ngIf="item.title">{{ item.title }}: </strong><span [innerHTML]="item.text"></span></p>
             </div>
         </div>
