@@ -16,7 +16,7 @@ export class ProductsComponent implements OnInit {
     }, {
         ionicon: 'laptop-outline',
         imageRounded: true,
-        text: 'Alle Funktionen sind an jedem beliebigem Standort mit einem internernetfähigen Gerät über den Browser verfügbar.',
+        text: 'Alle Funktionen sind an jedem beliebigen Standort mit einem internetfähigen Gerät über den Browser verfügbar.',
     }, {
         ionicon: 'people-outline',
         imageRounded: true,
@@ -67,14 +67,14 @@ export class ProductsComponent implements OnInit {
     }, {
         url: 'assets/products/safelog/gallery/templates.png',
         text: 'Erstellen Sie Word-Vorlagen, um aus den Falldaten automatische Briefe zu generieren. Diese können ausgedruckt oder in den' +
-            ' Fällen abgelegt werden..',
+            ' Fällen abgelegt werden.',
     }, {
         url: 'assets/products/safelog/gallery/stats.png',
         text: 'Generieren Sie jederzeit Statistiken zu einer beliebigen Zeitspanne. Es existieren Statistiken zu Beratungen, Personen,' +
-            ' Fällen, Ansprechpersonen (der Fälle) und der SafeLog-Benutzer.',
+            ' Fällen, Ansprechpersonen (der Fälle) und SafeLog-Benutzern.',
     }, {
         url: 'assets/products/safelog/gallery/processes.png',
-        text: 'Als Administrator definieren Sie die Abläufe Ihrer Fälle. Zu jedem Falltyp können Prozessschritte definierten werden.' +
+        text: 'Als Administrator definieren Sie die Abläufe Ihrer Fälle. Zu jedem Falltyp können Prozessschritte erfasst werden.' +
             ' Verschiedene Farben helfen Ihnen bei der Orientierung während der Arbeit mit den Fällen.',
     }, {
         url: 'assets/products/safelog/gallery/maintenance.png',
@@ -119,13 +119,13 @@ export class ProductsComponent implements OnInit {
         imageRounded: true,
         title: 'Servicevertrag',
         text: 'Wir schliessen mit Ihnen einen Servicevertrag ab, der Lizenz, Betrieb und Support von SafeLog beinhaltet. Bei uns gibt es' +
-            ' keine versteckte Kosten, alles ist inklusive.',
+            ' keine versteckten Kosten; alles ist inklusive.',
     }, {
         imageText: '4',
         imageRounded: true,
         title: 'Loslegen',
-        text: 'Nun sind Sie bereit für SafeLog und können loslegen! Auf Anfrage bieten wir Ihnen einen kostenlosen Schulungstag vor Ort' +
-            ' an.',
+        text: 'Nun sind Sie bereit für SafeLog und können die Webapplikation über jeden Internet-Browser nutzen! Auf Anfrage bieten wir' +
+            ' Ihnen zur Einführung einen kostenlosen Schulungstag vor Ort an.',
     }];
 
     constructor() { }

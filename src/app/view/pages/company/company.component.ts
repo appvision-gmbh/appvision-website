@@ -108,7 +108,7 @@ export class CompanyComponent implements OnInit {
         imageBorder: true,
         imageRounded: true,
         title: 'OTB Applications',
-        text: 'Distributionspartner von SafeLog für Kitas, Schulen, Heimen, usw.',
+        text: 'Distributionspartner von SafeLog für Kitas, Schulen, Heime usw.',
     }];
 
     constructor() { }

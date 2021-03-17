@@ -31,6 +31,7 @@
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Auf einen Blick</h1>
+            <p class="max-width-large text-muted">Das sollten Sie über SafeLog wissen.</p>
         </div>
 
         <div class="row text-left">
@@ -51,7 +52,7 @@
                     ⌲ Hosting in hochsicherem Schweizer Datencenter<br/>
                     ⌲ Wartung und regelmässige Updates<br/>
                     ⌲ Tägliche Backups georedundant gespeichert<br/>
-                    ⌲ Produktesupport via Tel. und E-Mail<br/>
+                    ⌲ Produktesupport via Telefon und E-Mail<br/>
                     ⌲ Spezifische Weiterentwicklungen auf Offerte
                 </p>
             </div>
@@ -66,10 +67,10 @@
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Galerie</h1>
-            <p>Klicken Sie sich durch die Bilder, um mehr über SafeLog zu erfahren.</p>
+            <p class="max-width-large text-muted">Klicken Sie sich durch die Bilder, um mehr über SafeLog zu erfahren.</p>
         </div>
 
-        <ngb-carousel [interval]="10*1000" class="border">
+        <ngb-carousel [interval]="5*1000" class="border">
             <ng-template *ngFor="let image of images; let i = index;" ngbSlide>
                 <div class="picsum-img-wrapper">
                     <img [src]="image.url" alt="image">
@@ -102,7 +103,7 @@
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Umstieg zu SafeLog</h1>
-            <p>So gelingt der Umstieg zu SafeLog ohne grossen Aufwand.</p>
+            <p class="max-width-large text-muted">So gelingt der Umstieg zu SafeLog ohne grossen Aufwand.</p>
         </div>
 
         <app-grid [items]="switch" [format]="'list'" [maxWidth]="'40rem'"></app-grid>

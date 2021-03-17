@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
         ionicon: 'briefcase-outline',
         imageRounded: true,
         title: 'GmbH',
-        text: 'Unser Unternehmen mit Sitz in Reinach BL steht Ihnen gerne zur Verfügung. Gerne beraten wir Sie persönlich und' +
+        text: 'Unser Unternehmen mit Sitz in Reinach BL steht Ihnen zur Verfügung. Gerne beraten wir Sie persönlich und' +
             ' unverbindlich per Telefon, E-Mail oder bei Ihnen vor Ort.',
     }];
 
@@ -43,8 +43,8 @@ export class HomeComponent implements OnInit {
         imageSrc: 'assets/services.png',
         imagePadding: '0 30px',
         title: 'Dienstleistungen',
-        text: 'AppVision bietet im Bereich Informationstechnologie und Naturwissenschaften verschiedene Dienstleistungen an. Wir sind' +
-            ' spezialisiert auf die Entwicklung von Webapplikationen und nativen Apps für iOS/Android.',
+        text: 'AppVision bietet in den Bereichen Informationstechnologie und Naturwissenschaften verschiedene Dienstleistungen an. Wir' +
+            ' sind spezialisiert auf die Entwicklung von Webapplikationen und nativen Apps für iOS/Android.',
         url: 'services',
         urlText: 'Mehr dazu',
     }];

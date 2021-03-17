@@ -28,7 +28,7 @@ export class ServicesComponent implements OnInit {
             ionicon: 'server-outline',
             imageRounded: true,
             title: 'Hosting',
-            text: 'Wir geben Ihrem Webprojekt ein Zuhause. Im zertifizierten Datenzenter der Industriellen Werke Basel (IWB) betreiben' +
+            text: 'Wir geben Ihrem Webprojekt ein Zuhause. Im zertifizierten Datencenter der Industriellen Werke Basel (IWB) betreiben' +
                 ' wir eine eigene Server-Infrastruktur.',
         },
         {
