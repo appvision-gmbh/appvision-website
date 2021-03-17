@@ -12,7 +12,7 @@
 
     </div>
 </div>
-
+F
 <div class="bg-light">
     <div class="container py-5 text-center">
 
@@ -21,7 +21,7 @@
             <p class="max-width-large text-muted">Nachfolgend finden Sie einen Auszug von zufriedenen Kunden von AppVision.</p>
         </div>
 
-        <app-icons [data]="customersData"></app-icons>
+        <app-grid [items]="customersData" [format]="'grid'"></app-grid>
 
     </div>
 </div>
@@ -34,7 +34,7 @@
             <p class="max-width-large text-muted">Zu unseren wichtigsten Partnern gehören folgende Firmen:</p>
         </div>
 
-        <app-icons [data]="partnersData"></app-icons>
+        <app-grid [items]="partnersData" [format]="'grid'"></app-grid>
 
     </div>
 </div>

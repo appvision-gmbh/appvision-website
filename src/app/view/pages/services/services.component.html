@@ -11,7 +11,7 @@
             </p>
         </div>
 
-        <app-list [items]="services" [width]="'40rem'"></app-list>
+        <app-grid [items]="services" [format]="'list'" [maxWidth]="'40rem'"></app-grid>
 
     </div>
 </div>
@@ -28,7 +28,7 @@
             </p>
         </div>
 
-        <app-icons [data]="projects" [size]="'lg'"></app-icons>
+        <app-grid [items]="projects" [format]="'grid'"></app-grid>
 
     </div>
 </div>
@@ -44,7 +44,7 @@
             </p>
         </div>
 
-        <app-icons [data]="technologies" [size]="'sm'"></app-icons>
+        <app-grid [items]="technologies" [format]="'grid'"></app-grid>
 
     </div>
 </div>

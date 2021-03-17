@@ -8,10 +8,9 @@ import { FooterComponent } from './view/components/footer/footer.component';
 import { HomeComponent } from './view/pages/home/home.component';
 import { MenuComponent } from './view/components/menu/menu.component';
 import { ProductsComponent } from './view/pages/products/products.component';
-import { IconsComponent } from './view/components/icons/icons.component';
 import { CompanyComponent } from './view/pages/company/company.component';
 import { ServicesComponent } from './view/pages/services/services.component';
-import { ListComponent } from './view/components/list/list.component';
+import { GridComponent } from './view/components/grid/grid.component';
 
 @NgModule({
     declarations: [
@@ -20,10 +19,9 @@ import { ListComponent } from './view/components/list/list.component';
         HomeComponent,
         FooterComponent,
         ProductsComponent,
-        IconsComponent,
         CompanyComponent,
         ServicesComponent,
-        ListComponent,
+        GridComponent,
     ],
     imports: [
         BrowserModule,

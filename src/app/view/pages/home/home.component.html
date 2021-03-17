@@ -10,7 +10,7 @@
             <p class="max-width-large text-muted">Bei uns ist der Name Programm.</p>
         </div>
 
-        <app-list [items]="welcomeItems" [width]="'40rem'"></app-list>
+        <app-grid [items]="welcomeItems" [format]="'list'" [maxWidth]="'40rem'"></app-grid>
 
     </div>
 </div>
@@ -23,7 +23,7 @@
             <p class="max-width-large text-muted">An welchen Angeboten sind Sie interessiert?</p>
         </div>
 
-        <app-icons [data]="offersData" [size]="'xl'" [border]="''"></app-icons>
+        <app-grid [items]="offersData" [format]="'grid'"></app-grid>
 
     </div>
 </div>
