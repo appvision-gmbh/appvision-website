@@ -1,18 +1,15 @@
 @import "src/variables";
 
-.banner {
+.carousel-caption {
 
-    .carousel-caption {
+    .text {
+        padding: $spacer-3;
+        border: 1px solid $border-color;
+        background: rgba($black, 0.9);
+        color: $white;
 
-        .text {
-            padding: $spacer-3;
-            border: 1px solid $border-color;
-            background: rgba($white, 0.95);
-            color: $primary;
-
-            h3, p {
-                //color: inherit;
-            }
+        h3, p {
+            color: inherit;
         }
     }
 }

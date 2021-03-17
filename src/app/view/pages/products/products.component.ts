@@ -48,7 +48,35 @@ export class ProductsComponent implements OnInit {
             ' Sicherheit.',
     }];
 
-    images = [1, 2, 3, 4, 5, 6, 7, 8, 10].map(i => 'assets/products/safelog/showcase' + '' + '.png');
+    images: { url: string, title: string, text: string }[] = [{
+        url: 'assets/products/safelog/showcase.png',
+        title: 'a',
+        text: 'b',
+    }, {
+        url: 'assets/products/safelog/showcase.png',
+        title: 'a',
+        text: 'b',
+    }];
+
+    clients: GridItem[] = [{
+        colCssClass: 'offset-lg-2 col-lg-4 col-md-6',
+        imageSrc: 'assets/customers/kanton_aargau.png',
+        imageRounded: true,
+        imageBorder: true,
+        imagePadding: '0 10%',
+        title: 'Fachstelle Nahtstelle 1',
+        text: '«SafeLog ist das optimale Instrument, damit der Fokus auf dem Klienten liegt und nicht auf der Falladministration.' +
+            ' SafeLog besticht durch seine Benutzerfreundlichkeit und das Design.»',
+    }, {
+        colCssClass: 'col-lg-4 col-md-6',
+        imageRounded: true,
+        imageBorder: true,
+        imagePadding: '0 10%',
+        imageSrc: 'assets/customers/kanton_basel-landschaft.png',
+        title: 'Berufsintegration Basel-Landschaft',
+        text: '«Mit SafeLog ist unsere Falldokumentation bedeutend einfacher und konsistenter geworden. Dank individuellen Anpassungen' +
+            ' ist SafeLog genau auf die Bedürfnisse unserer Stelle zugeschnitten!',
+    }];
 
     constructor() { }
 

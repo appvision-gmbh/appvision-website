@@ -64,25 +64,24 @@
     <div class="container py-5 text-center">
 
         <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Gesamte Funktionalität</h1>
+            <h1 class="font-weight-bold text-uppercase">Demo</h1>
+            <p>Klicken Sie sich durch die Bilder, um mehr über SafeLog zu erfahren.</p>
         </div>
 
-    </div>
-
-    <div class="banner">
-        <ngb-carousel [interval]="10*1000">
+        <ngb-carousel [interval]="10*1000" class="border">
             <ng-template *ngFor="let image of images; let i = index;" ngbSlide>
                 <div class="picsum-img-wrapper">
-                    <img [src]="images[i]" alt="image">
+                    <img [src]="image.url" alt="image">
                 </div>
                 <div class="carousel-caption">
                     <div class="text">
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum. Nulla vitae elit libero, a pharetra augue mollis interdum. Nulla vitae elit libero, a pharetra augue mollis interdum. Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>{{ image.title }}</h3>
+                        <p>{{ image.title }}</p>
                     </div>
                 </div>
             </ng-template>
         </ngb-carousel>
+
     </div>
 
 </div>
@@ -94,8 +93,10 @@
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Referenzen</h1>
-            <p class="text-muted">Das sagen unsere Kunden</p>
+            <p class="text-muted">Unsere Kunden sind begeistert von SafeLog.</p>
         </div>
+
+        <app-grid [items]="clients" [format]="'grid'"></app-grid>
 
 
         <div class="mb-5">
