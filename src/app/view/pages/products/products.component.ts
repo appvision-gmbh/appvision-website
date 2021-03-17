@@ -78,6 +78,32 @@ export class ProductsComponent implements OnInit {
             ' ist SafeLog genau auf die Bedürfnisse unserer Stelle zugeschnitten!',
     }];
 
+    switch: GridItem[] = [{
+        imageText: '1',
+        imageRounded: true,
+        title: 'Beratung',
+        text: 'Kontaktieren Sie uns für eine umfangreiche Produktberatung. Wir klären mit Ihnen Ihre Anforderungen an SafeLog und zeigen' +
+            ' Ihnen in einer Demo die Möglichkeiten auf.',
+    }, {
+        imageText: '2',
+        imageRounded: true,
+        title: 'Einmalige Arbeiten',
+        text: 'Wenn Sie SafeLog erweitern lassen möchten, offerieren wir Ihnen diese einmaligen Leistungen im Voraus. Falls technisch' +
+            ' möglich, migrieren wir Ihre Daten von Ihrem alten System.',
+    }, {
+        imageText: '3',
+        imageRounded: true,
+        title: 'Servicevertrag',
+        text: 'Wir schliessen mit Ihnen einen Servicevertrag ab, der Lizenz, Betrieb und Support von SafeLog beinhaltet. Bei uns gibt es' +
+            ' keine versteckte Kosten, alles ist inklusive.',
+    }, {
+        imageText: '4',
+        imageRounded: true,
+        title: 'Loslegen',
+        text: 'Nun sind Sie bereit für SafeLog und können loslegen! Auf Anfrage bieten wir Ihnen einen kostenlosen Schulungstag vor Ort' +
+            ' an.',
+    }];
+
     constructor() { }
 
     ngOnInit(): void {

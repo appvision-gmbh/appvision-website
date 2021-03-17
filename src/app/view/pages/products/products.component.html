@@ -1,11 +1,11 @@
 <div class="menu-background"></div>
 
-<div class="bg-light">
+<div class="">
     <div class="container py-5 text-center">
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Willkommen bei SafeLog</h1>
-            <p class="text-muted">eine moderne Webapplikation für Ihr Case Management</p>
+            <p class="max-width-large text-muted">eine moderne Webapplikation für Ihr Case Management</p>
         </div>
 
         <img src="assets/products/safelog/showcase.png" alt="header">
@@ -13,11 +13,12 @@
     </div>
 </div>
 
-<div class="">
+<div class="bg-light">
     <div class="container py-5 text-center">
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Merkmale</h1>
+            <p class="max-width-large text-muted">Erfahren Sie, weshalb SafeLog die optimale Lösung für Ihr Case Management ist.</p>
         </div>
 
         <app-grid [items]="features" [format]="'list'" [maxWidth]="'30rem'"></app-grid>
@@ -25,7 +26,7 @@
     </div>
 </div>
 
-<div class="bg-light">
+<div class="">
     <div class="container py-5 text-center">
 
         <div class="mb-5">
@@ -59,12 +60,12 @@
     </div>
 </div>
 
-<div class="">
+<div class="bg-light">
 
     <div class="container py-5 text-center">
 
         <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Demo</h1>
+            <h1 class="font-weight-bold text-uppercase">Galerie</h1>
             <p>Klicken Sie sich durch die Bilder, um mehr über SafeLog zu erfahren.</p>
         </div>
 
@@ -86,39 +87,28 @@
 
 </div>
 
+<div class="">
+    <div class="container py-5 text-center">
 
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Referenzen</h1>
+            <p class="max-width-large text-muted">Unsere Kunden sind begeistert von SafeLog.</p>
+        </div>
+
+        <app-grid [items]="clients" [format]="'grid'"></app-grid>
+
+    </div>
+</div>
 
 <div class="bg-light">
     <div class="container py-5 text-center">
 
         <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Referenzen</h1>
-            <p class="text-muted">Unsere Kunden sind begeistert von SafeLog.</p>
+            <h1 class="font-weight-bold text-uppercase">Umstieg zu SafeLog</h1>
+            <p>So gelingt der Umstieg zu SafeLog ohne grossen Aufwand.</p>
         </div>
 
-        <app-grid [items]="clients" [format]="'grid'"></app-grid>
-
-
-        <div class="mb-5">
-            <p class="font-weight-bold text-uppercase">Der Umstieg auf SafeLog ist einfach</p>
-        </div>
-
-        <p>Wir schliessen mit Ihnen einen Servicevertrag ab, welcher Betrieb, Wartung und Support von SafeLog
-            einschliesst.<br/>
-            Datenübernahme, Zusatzmodule und weitere Dienstleistungen offerieren wir Ihnen persönlich!</p>
-
-
-        <p>Leitung Fachstelle Nahtstelle 1 Kanton Aargau
-            «SafeLog ist das optimale Instrument, damit der Fokus auf dem Klienten liegt und nicht auf der
-            Falladministration. SafeLog besticht durch seine Benutzerfreundlichkeit und das Design.»</p>
-
-        <p>Leitung Berufsintegration Kanton Basel-Landschaft
-            «Mit SafeLog ist unsere Falldokumenta>on bedeutend einfacher und konsistenter geworden. Dank individuellen
-            Anpassungen ist SafeLog genau auf die Bedürfnisse unserer Stelle zugeschnitten!»</p>
-
-        <p>Leitung Abteilung Berufsbildung Kanton SchaBausen</p>
-
-        <p>Showcase Wegweiser?</p>
+        <app-grid [items]="switch" [format]="'list'" [maxWidth]="'40rem'"></app-grid>
 
     </div>
 </div>
@@ -128,7 +118,7 @@
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Pakete und Preise</h1>
-            <p class="text-muted">Wählen Sie ein für Sie passendes Paket und wir erstellen Ihnen eine individuelle
+            <p class="max-width-large text-muted">Wählen Sie ein für Sie passendes Paket und wir erstellen Ihnen eine individuelle
                 Offerte.</p>
         </div>
 
