@@ -60,16 +60,34 @@
 </div>
 
 <div class="">
+
     <div class="container py-5 text-center">
 
         <div class="mb-5">
             <h1 class="font-weight-bold text-uppercase">Gesamte Funktionalität</h1>
         </div>
 
-        <app-icons [data]="[]"></app-icons>
-
     </div>
+
+    <div class="banner">
+        <ngb-carousel [interval]="10*1000">
+            <ng-template *ngFor="let image of images; let i = index;" ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="images[i]" alt="image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="text">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum. Nulla vitae elit libero, a pharetra augue mollis interdum. Nulla vitae elit libero, a pharetra augue mollis interdum. Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+
 </div>
+
+
 
 <div class="bg-light">
     <div class="container py-5 text-center">

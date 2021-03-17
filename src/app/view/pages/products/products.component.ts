@@ -38,6 +38,8 @@ export class ProductsComponent implements OnInit {
             ' Sicherheit.',
     }];
 
+    images = [1, 2, 3, 4, 5, 6, 7, 8, 10].map(i => 'assets/products/safelog/showcase' + '' + '.png');
+
     constructor() { }
 
     ngOnInit(): void {
