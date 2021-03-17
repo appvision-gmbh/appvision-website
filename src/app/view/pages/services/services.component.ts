@@ -18,7 +18,7 @@ export class ServicesComponent implements OnInit {
         {
             ionicon: 'code-outline',
             text: '<strong>Software-Architektur</strong>: Dank unserer langjährigen Expertise in der Software-Architektur und' +
-                ' -Entwicklung setzen wir Ihr Projekt effizient um. Wir sind spezialisiert auf mobile Apps und moderne Webtechnologien.',
+                ' -Entwicklung setzen wir Ihr Projekt effizient um. Wir sind spezialisiert auf Apps und moderne Webtechnologien.',
         },
         {
             ionicon: 'server-outline',
@@ -59,25 +59,28 @@ export class ServicesComponent implements OnInit {
             rounded: false,
             title: 'Das-Team-App',
             text: 'Zu einer vom Kunden vordefinierten API entwickelten wir eine native App für iOS und Android.',
+            link: 'https://team.jobs',
         },
         {
             imageSrc: 'assets/projects/rotblau.png',
             rounded: false,
             title: 'Rotblau-App',
             text: 'Die von uns entwickelte Rotblau-App ist mit über 110\'000 Downloads eine der beliebtesten Apps der Schweiz.',
+            link: 'https://about.rotblau.app',
         },
         {
             imageSrc: 'assets/projects/st-jakob-park.png',
             rounded: false,
             title: 'Shopping Center',
             text: 'Für das Shopping Center St. Jakob-Park implementierten wir eine Bestellplattform mit Bezahlungssystem.',
+            link: 'https://gutscheine.st-jakob-park.com/order/',
         },
         {
             imageSrc: 'assets/projects/wegweiser.png',
             rounded: false,
             title: 'Wegweiser',
-            text: 'Als Safelog-Modul entwickelten wir für den Kanton Aargau die Plattform «Wegweiser» für die Brückenangebote nach dem' +
-                ' 9. Schuljahr.',
+            text: 'Als Safelog-Modul entwickelten wir für den Kanton Aargau die Plattform «Wegweiser» für die schulischen Brückenangebote.',
+            link: 'https://wegweiser.online',
         },
     ];
 
