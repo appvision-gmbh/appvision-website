@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
     selector: 'app-menu',
@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
 
     readonly SCROLLED_TO_TOP_THRESHOLD = 200;
+
+    activePage: 'safelog' | 'services' | 'company' | string = '';
 
     collapsed = true;
 
@@ -20,7 +22,15 @@ export class MenuComponent implements OnInit {
         this.transparent = pos <= this.SCROLLED_TO_TOP_THRESHOLD;
     };
 
-    constructor(private router: Router) {}
+    constructor(private router: Router) {
+        this.router.events.subscribe(
+            (value) => {
+                if (value instanceof NavigationEnd) {
+                    this.activePage = value.url.replace('/', '');
+                }
+            }
+        );
+    }
 
     ngOnInit(): void {
     }
@@ -28,8 +38,9 @@ export class MenuComponent implements OnInit {
     /**
      * Opens a link.
      */
-    openLink(url: string): void {
+    openLink(url: 'safelog' | 'services' | 'company' | ''): void {
         this.router.navigate([url]);
+        this.activePage = url;
         this.collapsed = true;
     }
 
