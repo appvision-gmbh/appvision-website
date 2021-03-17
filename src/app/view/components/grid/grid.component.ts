@@ -58,6 +58,10 @@ export class GridComponent {
             str += ' border';
         }
 
+        if (item.url) {
+            str += ' url';
+        }
+
         return str;
 
     }

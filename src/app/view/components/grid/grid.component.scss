@@ -31,6 +31,10 @@
                 img {
                     width: 100%;
                     background-color: $white;
+
+                    &.border.url:hover {
+                        border: 1px solid $primary!important;
+                    }
                 }
             }
 
@@ -40,10 +44,12 @@
 
                 .title {
                     font-weight: $font-weight-bold;
+                    margin-bottom: $spacer-2;
                 }
 
                 .text {
-                    color: $text-muted;
+                    margin-bottom: $spacer-2;
+                    //color: $text-muted;
                 }
             }
 
