@@ -6,6 +6,14 @@
 // Import Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+// Import Font
+@import "~@fontsource/open-sans/300.css";
+@import "~@fontsource/open-sans/300-italic.css";
+@import "~@fontsource/open-sans/400.css";
+@import "~@fontsource/open-sans/400-italic.css";
+@import "~@fontsource/open-sans/600.css";
+@import "~@fontsource/open-sans/700.css";
+
 h1, h2, h3, h4, h5 {
     word-break: break-all;
 }

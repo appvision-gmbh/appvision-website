@@ -1,5 +1,9 @@
 // Override Bootstrap variables
 $primary: #003b6c;
+$font-family-sans-serif: "Open Sans";
+$font-weight-base: 300;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
 
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
