@@ -44,8 +44,4 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
     }
 
-    openGoogleMaps(): void {
-        window.open('https://www.google.com/maps/place/AppVision+GmbH/@47.4887406,7.5993231,15z/data=!4m5!3m4!1s0x0:0xf3912539f26d6ab4!8m2!3d47.4886888!4d7.5993087');
-    }
-
 }
