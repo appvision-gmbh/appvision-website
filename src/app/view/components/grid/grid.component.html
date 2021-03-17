@@ -11,6 +11,7 @@
             </div>
             <div *ngIf="item.title || item.text" class="info">
                 <div class="title">{{ item.title }}</div>
+                <div class="text">{{ item.text }}</div>
             </div>
             <div *ngIf="item.url" class="link text-truncate">
                 <a class="cursor-pointer" (click)="openUrl(item.url)">
