@@ -9,7 +9,10 @@
             <div class="text"><p [innerHTML]="d.text"></p></div>
         </div>
         <div *ngIf="d.link" class="link text-truncate">
-            <a [href]="d.link" target="_blank"><ion-icon name="link-outline"></ion-icon> {{ d.linkText || d.link }}</a>
+            <a class="cursor-pointer" (click)="openUrl(d.link)">
+                <ion-icon [name]="d.link.startsWith('http') ? 'link-outline' : 'arrow-forward-outline'"></ion-icon>
+                {{ d.linkText || d.link }}
+            </a>
         </div>
     </div>
 </div>
@@ -24,7 +27,10 @@
             <div class="text"><p [innerHTML]="d.text"></p></div>
         </div>
         <div *ngIf="d.link" class="link text-truncate">
-            <a [href]="d.link" target="_blank"><ion-icon name="link-outline"></ion-icon> {{ d.linkText || d.link }}</a>
+            <a class="cursor-pointer" (click)="openUrl(d.link)">
+                <ion-icon [name]="d.link.startsWith('http') ? 'link-outline' : 'arrow-forward-outline'"></ion-icon>
+                {{ d.linkText || d.link }}
+            </a>
         </div>
     </div>
 </div>
@@ -38,7 +44,10 @@
             <div class="text"><p [innerHTML]="d.text"></p></div>
         </div>
         <div *ngIf="d.link" class="link text-truncate">
-            <a [href]="d.link" target="_blank"><ion-icon name="link-outline"></ion-icon> {{ d.linkText || d.link }}</a>
+            <a class="cursor-pointer" (click)="openUrl(d.link)">
+                <ion-icon [name]="d.link.startsWith('http') ? 'link-outline' : 'arrow-forward-outline'"></ion-icon>
+                {{ d.linkText || d.link }}
+            </a>
         </div>
     </div>
 </div>

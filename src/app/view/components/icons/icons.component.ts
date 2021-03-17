@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 export type IconsData = {
     imageSrc: string,
@@ -14,16 +15,21 @@ export type IconsData = {
     templateUrl: './icons.component.html',
     styleUrls: ['./icons.component.scss'],
 })
-export class IconsComponent implements OnInit {
+export class IconsComponent {
 
     @Input() data: IconsData[] = [];
     @Input() grayscale = false;
     @Input() size: 'sm' | 'lg' | 'xl' = 'lg';
     @Input() border = 'border';
 
-    constructor() { }
+    constructor(private router: Router) { }
 
-    ngOnInit(): void {
+    openUrl(url: string): void {
+        if (url.startsWith('http')) {
+            window.open(url);
+        } else {
+            this.router.navigate([url]);
+        }
     }
 
 }
