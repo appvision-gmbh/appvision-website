@@ -17,6 +17,7 @@
 h1, h2, h3, h4, h5 {
     color: $primary;
     word-break: break-word;
+    font-weight: $font-weight-bold;
 }
 
 p {
