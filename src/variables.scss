@@ -10,6 +10,7 @@ $font-weight-bolder: 700;
 @import '../node_modules/bootstrap/scss/mixins';
 
 // Other variables
+$menu-height: 98px;
 $width-large: 40rem;
 $width-medium: 30rem;
 $width-small: 20rem;
@@ -19,3 +20,4 @@ $spacer-3: map-get($spacers, 3);
 $spacer-4: map-get($spacers, 4);
 $spacer-5: map-get($spacers, 5);
 $spacer-6: $spacer * 5;
+
