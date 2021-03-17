@@ -1,0 +1,50 @@
+<div class="menu-background"></div>
+
+<div class="">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Dienstleistungen</h1>
+            <p class="max-width-large text-muted">
+                Die AppVision GmbH erbringt Dienstleistungen für Behörden und Firmen in den Bereichen Informationstechnologie und Naturwissenschaften.
+                Wir bieten unter anderem folgende Dienstleistungen:
+            </p>
+        </div>
+
+        <app-grid [items]="services" [format]="'list'" [maxWidth]="'40rem'"></app-grid>
+
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Projekte</h1>
+            <p class="max-width-large text-muted">
+                AppVision vermarktet und betreibt hauptsächlich die hauseigene Webapplikation «SafeLog».
+                Auf Kundenanfrage entwickelte AppVision diverse grössere Projekte.
+                Öffentlich zugänglich sind davon folgende Projekte:
+            </p>
+        </div>
+
+        <app-grid [items]="projects" [format]="'grid'"></app-grid>
+
+    </div>
+</div>
+
+<div class="">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Technologien</h1>
+            <p class="max-width-large text-muted">
+                AppVision ist spezialisiert auf die Architektur und Entwicklung von komplexen Softwareprojekten, insbesondere von Webapplikationen.
+                Wir setzen vor allem auf die folgenden Technologien und Sprachen:
+            </p>
+        </div>
+
+        <app-grid [items]="technologies" [format]="'grid'"></app-grid>
+
+    </div>
+</div>

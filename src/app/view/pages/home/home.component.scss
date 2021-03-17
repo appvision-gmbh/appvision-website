@@ -1,0 +1,30 @@
+@import "../../../../variables";
+
+.banner {
+    width: 100%;
+    min-width: $width-small;
+
+    img {
+        margin-top: $menu-height;
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+
+        @include media-breakpoint-up(sm) {
+            height: 15rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0; // the menu is transparent now
+            height: 22.5rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 25rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 30rem;
+        }
+    }
+}

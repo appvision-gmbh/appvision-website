@@ -1,0 +1,49 @@
+@import "src/variables";
+
+.container {
+
+    ion-icon {
+        position: relative;
+        top: 0.1875rem;
+        color: $primary;
+    }
+
+    .carousel {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .carousel-caption {
+
+        .text {
+            padding: $spacer-3;
+            border: 1px solid $border-color;
+            background: rgba($primary, 0.9);
+            color: $white;
+        }
+    }
+
+    .cards-prices {
+        .card {
+            max-width: $width-medium;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: $card-deck-margin;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            flex-flow: row wrap;
+            margin-right: -$card-deck-margin;
+            margin-left: -$card-deck-margin;
+
+            .card {
+                // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+                flex: 1 0 0%;
+                margin-right: $card-deck-margin;
+                margin-bottom: 0; // Override the default
+                margin-left: $card-deck-margin;
+            }
+        }
+    }
+}

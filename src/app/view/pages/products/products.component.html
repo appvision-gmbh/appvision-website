@@ -1,0 +1,209 @@
+<div class="menu-background"></div>
+
+<div class="">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Willkommen bei SafeLog</h1>
+            <p class="max-width-large text-muted">eine moderne Webapplikation für Ihr Case Management</p>
+        </div>
+
+        <img src="assets/products/safelog/showcase.png" alt="header">
+
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Merkmale</h1>
+            <p class="max-width-large text-muted">Erfahren Sie, weshalb SafeLog die optimale Lösung für Ihr Case Management ist.</p>
+        </div>
+
+        <app-grid [items]="features" [format]="'list'" [maxWidth]="'30rem'"></app-grid>
+
+    </div>
+</div>
+
+<div class="">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Auf einen Blick</h1>
+            <p class="max-width-large text-muted">Das sollten Sie über SafeLog wissen.</p>
+        </div>
+
+        <div class="row text-left">
+            <div class="offset-xl-1 col-xl-5 col-sm-6 col-12 mb-3">
+                <h3>Prinzipien von SafeLog</h3>
+                <p>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Selbsterklärende Bedienung auch für Einsteiger<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Keine Kompromisse bei der Datensicherheit<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Einsatz von zukunftssicheren Technologien<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Modularer Aufbau für mögliche Erweiterungen<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Schnittstellen für andere Anwendungen
+                </p>
+
+            </div>
+            <div class="col-xl-5 col-sm-6 col-12">
+                <h3>Service von AppVision</h3>
+                <p>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Hosting in hochsicherem Schweizer Datencenter<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Wartung und regelmässige Updates<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Tägliche Backups georedundant gespeichert<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Produktesupport via Telefon und E-Mail<br/>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Spezifische Weiterentwicklungen auf Offerte
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="bg-light">
+
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Galerie</h1>
+            <p class="max-width-large text-muted">Klicken Sie sich durch die Bilder, um mehr über SafeLog zu erfahren.</p>
+        </div>
+
+        <ngb-carousel [interval]="5*1000" class="border">
+            <ng-template *ngFor="let image of images; let i = index;" ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="image.url" alt="image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="text">{{ image.text }}</div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+
+    </div>
+
+</div>
+
+<div class="">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Referenzen</h1>
+            <p class="max-width-large text-muted">Unsere Kunden sind begeistert von SafeLog.</p>
+        </div>
+
+        <app-grid [items]="clients" [format]="'grid'"></app-grid>
+
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Umstieg zu SafeLog</h1>
+            <p class="max-width-large text-muted">So gelingt der Umstieg zu SafeLog ohne grossen Aufwand.</p>
+        </div>
+
+        <app-grid [items]="switch" [format]="'list'" [maxWidth]="'40rem'"></app-grid>
+
+    </div>
+</div>
+
+<div class="">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Pakete und Preise</h1>
+            <p class="max-width-large text-muted">Wählen Sie ein für Sie passendes Paket und wir erstellen Ihnen eine individuelle
+                Offerte.</p>
+        </div>
+
+        <div class="cards-prices">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Silber</h5>
+                    <h1 class="card-title">ab CHF 495</h1>
+                    <p class="text-muted small mt-n3">pro Monat</p>
+                    <p class="text-muted">für kleine Institutionen</p>
+                    <div class="card-text text-left mt-4">
+                        <p>
+                            <strong>Funktionalität</strong><br/>
+                            <span class="text-primary">✓</span> Komplette Funktionalität von SafeLog<br/>
+                            <span class="text-primary">✓</span> Bis zu 10 aktive Benutzer
+                        </p>
+                        <p>
+                            <strong>Infrastruktur</strong><br/>
+                            <span class="text-primary">✓</span> Hosting in Schweizer Datencenter<br/>
+                            <span class="text-primary">✓</span> Betrieb mit 100 % erneuerbarer Energie<br/>
+                        </p>
+                        <p>
+                            <strong>Wartung und Support</strong><br/>
+                            <span class="text-primary">✓</span> Regelmässige Wartung und Updates<br/>
+                            <span class="text-primary">✓</span> Tägliche georedundante Backups<br/>
+                            <span class="text-primary">✓</span> Support per E-Mail und Telefon<br/>
+                            <span class="text-primary">✓</span> Kostenlose Schulung bei Einführung<br/>
+                        </p>
+                        <p>
+                            <strong>Kosten</strong><br/>
+                            <span class="text-primary">✓</span> Lizenzgebühren inklusive<br/>
+                            <span class="text-primary">✓</span> Keine Einrichtungskosten<br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="mailto:info@appvision.ch" class="btn btn-outline-primary">Jetzt anfragen</a>
+                </div>
+            </div>
+            <div class="card border-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Gold</h5>
+                    <h1 class="card-title">auf Offerte</h1>
+                    <p class="text-muted small mt-n3">pro Monat</p>
+                    <p class="text-muted"><span class="badge badge-warning">beliebtestes Paket</span></p>
+                    <div class="card-text text-left mt-4">
+                        <p>
+                            <span class="text-primary">✓</span> Sämtliche Features von «Silber»<br/>
+                        </p>
+                        <p>
+                            <strong>Zusätzliche Features</strong><br/>
+                            <span class="text-primary">✓</span> Bis zu 100 aktive Benutzer<br/>
+                            <span class="text-primary">✓</span> Eigene Domain (z. B. ihre-seite.ch)<br/>
+                            <span class="text-primary">✓</span> Unlimitierter Produktesupport<br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="mailto:info@appvision.ch" class="btn btn-primary">Jetzt anfragen</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Platin</h5>
+                    <h1 class="card-title">auf Offerte</h1>
+                    <p class="text-muted small mt-n3">pro Monat</p>
+                    <p class="text-muted">für gehobene Ansprüche</p>
+                    <div class="card-text text-left mt-4">
+                        <p>
+                            <span class="text-primary">✓</span> Sämtliche Features von «Gold»<br/>
+                        </p>
+                        <p>
+                            <strong>Zusätzliche Features</strong><br/>
+                            <span class="text-primary">✓</span> Unbegrenzte Zahl aktiver Benutzer<br/>
+                            <span class="text-primary">✓</span> Betrieb auf eigener Infrastruktur<br/>
+                            <span class="text-primary">✓</span> Spezifische Anpassungen
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="mailto:info@appvision.ch" class="btn btn-outline-primary">Jetzt anfragen</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-muted mt-5">Preise (exkl. MwSt) variieren je nach Anforderungen. Kontaktieren Sie uns für nähere
+            Infos.</p>
+
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="banner">
+    <img src="assets/header-bg.jpg" alt="header">
+</div>
+
+<div class="bg-light">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">AppVision GmbH</h1>
+            <p class="max-width-large text-muted">Bei uns ist der Name Programm.</p>
+        </div>
+
+        <app-grid [items]="welcomeItems" [format]="'list'" [maxWidth]="'40rem'"></app-grid>
+
+    </div>
+</div>
+
+<div class="">
+    <div class="container py-5 text-center">
+
+        <div class="mb-5">
+            <h1 class="font-weight-bold text-uppercase">Angebote</h1>
+            <p class="max-width-large text-muted">An welchen Angeboten sind Sie interessiert?</p>
+        </div>
+
+        <app-grid [items]="offersData" [format]="'grid'"></app-grid>
+
+    </div>
+</div>

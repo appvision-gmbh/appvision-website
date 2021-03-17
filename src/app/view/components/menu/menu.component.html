@@ -1,0 +1,18 @@
+<nav class="navbar fixed-top navbar-expand-md navbar-dark" [ngClass]="(transparent ? '' : 'navbar-opaque')">
+    <div class="container">
+        <a class="navbar-brand cursor-pointer mr-5" (click)="openLink('')">
+            <img src="assets/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" (click)="collapsed = !collapsed">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngbCollapse]="collapsed" [ngClass]="collapsed ? '' : 'underline'">
+            <ul class="navbar-nav">
+                <li *ngFor="let m of MENU_ITEMS" class="nav-item">
+                    <a class="nav-link cursor-pointer" [ngClass]="activePage === m.url ? 'active' : ''"
+                       (click)="openLink(m.url)">{{ m.title }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,32 @@
+@import "../../../../variables";
+
+nav {
+    background: rgba($primary, 0.9) !important;
+    transition: background-color 0.5s ease, padding 0.5s ease;
+    padding-top: $spacer-4;
+    padding-bottom: $spacer-4;
+
+    &.navbar-opaque {
+        background: rgba($primary, 1) !important;
+        padding-top: $spacer-2;
+        padding-bottom: $spacer-2;
+    }
+
+    .navbar-brand {
+        img {
+            height: 2.5rem;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: rgba($primary, 1) !important;
+
+        .navbar-nav {
+            margin-top: $spacer-4;
+
+            .nav-item {
+                border-bottom: 1px solid rgba($white, 0.1);
+            }
+        }
+    }
+}
