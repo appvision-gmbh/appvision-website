@@ -1,6 +1,7 @@
 @import "../../../../variables";
 
 .banner {
+    position: relative;
     width: 100%;
     min-width: $width-small;
 
@@ -8,5 +9,13 @@
         width: 100%;
         height: 20rem;
         object-fit: cover;
+    }
+
+    .source {
+        font-size: $font-size-sm;
+        color: $text-muted;
+        position: absolute;
+        bottom: $spacer-2;
+        right: $spacer-2;
     }
 }

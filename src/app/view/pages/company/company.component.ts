@@ -61,7 +61,8 @@ export class CompanyComponent implements OnInit {
     }, {
         colCssClass: 'col-lg-3 col-md-4 col-sm-6',
         imageSrc: 'assets/customers/nexirius.png',
-        imageBorder: true, imageRounded: true,
+        imageBorder: true,
+        imageRounded: true,
         imagePadding: '0 30px',
         title: 'Nexirius',
     }, {
