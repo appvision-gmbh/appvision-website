@@ -5,6 +5,8 @@ export type IconsData = {
     rounded?: boolean,
     title?: string,
     text?: string,
+    link?: string,
+    linkText?: string,
 };
 
 @Component({
@@ -16,7 +18,7 @@ export class IconsComponent implements OnInit {
 
     @Input() data: IconsData[] = [];
     @Input() grayscale = false;
-    @Input() size: 'sm' | 'lg' = 'lg';
+    @Input() size: 'sm' | 'lg' | 'xl' = 'lg';
     @Input() border = 'border';
 
     constructor() { }

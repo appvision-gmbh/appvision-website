@@ -30,11 +30,10 @@
             margin-right: auto;
         }
 
-        max-width: 300px;
-
         .image {
             img {
                 width: 100%;
+                background-color: $white;
             }
         }
 
@@ -48,6 +47,15 @@
 
             .text {
                 color: $text-muted;
+            }
+        }
+
+        .link {
+            a {
+                ion-icon {
+                    position: relative;
+                    top: 0.1875rem;
+                }
             }
         }
     }
