@@ -1,16 +1,32 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+
+type PageUrl = 'safelog' | 'services' | 'company' | '';
 
 @Component({
     selector: 'app-menu',
     templateUrl: './menu.component.html',
     styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent  {
+
+    readonly MENU_ITEMS: {
+        url: PageUrl,
+        title: string,
+    }[] = [{
+        url: 'safelog',
+        title: 'SafeLog',
+    }, {
+        url: 'services',
+        title: 'Dienstleistungen',
+    }, {
+        url: 'company',
+        title: 'Unternehmen',
+    }];
 
     readonly SCROLLED_TO_TOP_THRESHOLD = 200;
 
-    activePage: 'safelog' | 'services' | 'company' | string = '';
+    activePage: PageUrl = '';
 
     collapsed = true;
 
@@ -26,19 +42,16 @@ export class MenuComponent implements OnInit {
         this.router.events.subscribe(
             (value) => {
                 if (value instanceof NavigationEnd) {
-                    this.activePage = value.url.replace('/', '');
+                    this.activePage = value.url.replace('/', '') as PageUrl;
                 }
             }
         );
     }
 
-    ngOnInit(): void {
-    }
-
     /**
      * Opens a link.
      */
-    openLink(url: 'safelog' | 'services' | 'company' | ''): void {
+    openLink(url: PageUrl): void {
         this.router.navigate([url]);
         this.activePage = url;
         this.collapsed = true;
