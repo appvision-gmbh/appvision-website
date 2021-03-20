@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit {
         ionicon: 'eye-outline',
         imageRounded: true,
         title: 'Vision',
-        text: 'Wir unterstützen Sie, Ihre «Vision» in die Realität umzusetzen. Mithilfe unseres fundierten Know-hows in verschiedensten' +
-            ' Technologien entwickeln wir Ihr Wunschprojekt professionell und effizient.',
+        text: 'Wir unterstützen Sie, Ihre «Vision» in die Realität umzusetzen. Mithilfe unseres fundierten Know-hows in' +
+            ' zukunftsorientierten Technologien entwickeln wir Ihr Wunschprojekt professionell und effizient.',
     }, {
         ionicon: 'briefcase-outline',
         imageRounded: true,

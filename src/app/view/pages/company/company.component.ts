@@ -100,6 +100,7 @@ export class CompanyComponent implements OnInit {
         imageSrc: 'assets/partners/nexirius.png',
         imageBorder: true,
         imageRounded: true,
+        imagePadding: '0 30px',
         title: 'Nexirius GmbH',
         text: 'Software-Firma mit über 25 Jahren Erfahrung.',
     }, {
@@ -107,6 +108,7 @@ export class CompanyComponent implements OnInit {
         imageSrc: 'assets/partners/otb-applications.png',
         imageBorder: true,
         imageRounded: true,
+        imagePadding: '0 30px',
         title: 'OTB Applications',
         text: 'Distributionspartner von SafeLog für Kitas, Schulen, Heime usw.',
     }];

@@ -32,7 +32,7 @@ export class ServicesComponent implements OnInit {
                 ' wir eine eigene Server-Infrastruktur.',
         },
         {
-            ionicon: 'help-outline',
+            ionicon: 'bulb-outline',
             imageRounded: true,
             title: 'Consulting',
             text: 'Wir analysieren Ihre Bedürfnisse, um eine bestmögliche Lösung für Ihr Projekt zu definieren. Wir unterstützen Sie bei' +
