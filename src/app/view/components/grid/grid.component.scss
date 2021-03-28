@@ -2,22 +2,6 @@
 
 .rows {
     .row {
-
-        &.row-small {
-            .row-col {
-                .image {
-                }
-            }
-        }
-
-        &.row-large {
-            .row-col {
-                .image {
-                    //padding: 0 30px;
-                }
-            }
-        }
-
         .row-col {
 
             @include media-breakpoint-down(xs) {
@@ -31,6 +15,10 @@
                 img {
                     width: 100%;
                     background-color: $white;
+
+                    @include media-breakpoint-down(xs) {
+                        max-width: 250px;
+                    }
 
                     &.border.url:hover {
                         border: 1px solid $primary!important;
