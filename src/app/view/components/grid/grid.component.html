@@ -1,6 +1,6 @@
 <div *ngIf="format === 'grid'" class="rows" [style.max-width]="maxWidth">
 
-    <div class="row row-large">
+    <div class="row">
         <div *ngFor="let item of items; let i = index" class="row-col mb-4"
              [ngClass]="item.colCssClass ? item.colCssClass : 'col-lg-2 col-md-3 col-sm-4 col-6'">
             <div *ngIf="item.ionicon || item.imageSrc" class="image" [style.padding]="item.imagePadding"

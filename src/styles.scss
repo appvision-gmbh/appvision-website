@@ -20,6 +20,16 @@ h1, h2, h3, h4, h5 {
     font-weight: $font-weight-bold;
 }
 
+
+@include media-breakpoint-down(xs) {
+    h1 {
+        font-size: $font-size-base * 2;
+    }
+    h2 {
+        font-size: $font-size-base * 1.875;
+    }
+}
+
 .font-size-lg {
     font-size: $font-size-lg;
 }

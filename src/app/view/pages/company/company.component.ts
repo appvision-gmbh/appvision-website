@@ -9,6 +9,32 @@ import { GridItem } from '../../components/grid/grid.component';
 })
 export class CompanyComponent implements OnInit {
 
+    people: GridItem[] = [{
+        colCssClass: 'col-lg-4 col-md-4 col-sm-6',
+        imageSrc: 'assets/people/aeschlimann.jpg',
+        imageBorder: true,
+        imageRounded: true,
+        imagePadding: '0 10%',
+        title: 'Andreas Aeschlimann M Sc',
+        text: 'Chief Executive Officer',
+    }, {
+        colCssClass: 'col-lg-4 col-md-4 col-sm-6',
+        imageSrc: 'assets/people/horvath.jpg',
+        imageBorder: true,
+        imageRounded: true,
+        imagePadding: '0 10%',
+        title: 'Dr. Antal Horváth',
+        text: 'Chief Technology Officer',
+    }, {
+        colCssClass: 'col-lg-4 col-md-4 col-sm-6',
+        imageSrc: 'assets/people/studer.jpg',
+        imageBorder: true,
+        imageRounded: true,
+        imagePadding: '0 10%',
+        title: 'Melissa Studer M Sc',
+        text: 'Chief Administrative Officer',
+    }];
+
     customersData: GridItem[] = [{
         colCssClass: 'col-lg-3 col-md-4 col-sm-6',
         imageSrc: 'assets/customers/kanton_aargau.png',
