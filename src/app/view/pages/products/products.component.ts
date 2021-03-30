@@ -83,7 +83,7 @@ export class ProductsComponent implements OnInit {
     }];
 
     clients: GridItem[] = [{
-        colCssClass: 'offset-lg-2 col-lg-4 col-md-6',
+        colCssClass: 'col-lg-4 col-md-6',
         imageSrc: 'assets/customers/kanton_aargau.png',
         imageRounded: true,
         imageBorder: true,
@@ -100,8 +100,16 @@ export class ProductsComponent implements OnInit {
         title: 'Berufsintegration Basel-Landschaft',
         text: '«Mit SafeLog ist unsere Falldokumentation bedeutend einfacher und konsistenter geworden. Dank individuellen Anpassungen' +
             ' ist SafeLog genau auf die Bedürfnisse unserer Stelle zugeschnitten!',
+    }, {
+        colCssClass: 'col-lg-4 col-md-6',
+        imageRounded: true,
+        imageBorder: true,
+        imagePadding: '0 10%',
+        imageSrc: 'assets/customers/kanton_schaffhausen.png',
+        title: 'CM Berufsbildung Schaffhausen',
+        text: '«SafeLog ist ein optisch ansprechendes und benutzerfreundliches Kliententool. Durch individuell definierbare' +
+            ' Prozessschritte spart man sich viel Zeit in der Falladministration.',
     }];
-
     switch: GridItem[] = [{
         imageText: '1',
         imageRounded: true,
