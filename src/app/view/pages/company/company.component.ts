@@ -19,11 +19,11 @@ export class CompanyComponent implements OnInit {
         text: 'Chief Executive Officer',
     }, {
         colCssClass: 'col-lg-4 col-md-4 col-sm-6',
-        imageSrc: 'assets/people/horvath.jpg',
+        imageSrc: 'assets/people/huck.jpg',
         imageBorder: true,
         imageRounded: true,
         imagePadding: '0 10%',
-        title: 'Dr. Antal Horváth',
+        title: 'Dr. Antal Huck',
         text: 'Chief Technology Officer',
     }, {
         colCssClass: 'col-lg-4 col-md-4 col-sm-6',
