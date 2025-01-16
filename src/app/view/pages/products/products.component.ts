@@ -12,38 +12,39 @@ export class ProductsComponent implements OnInit {
 
     readonly features: GridItem[] = [{
         imageSrc: 'assets/products/safelog/swiss-flag-outline.png',
+        imageCss: 'bg-danger',
         imageRounded: true,
         text: 'SafeLog wurde von AppVision in der Schweiz entwickelt und mit Experten für das Case Management optimiert.',
     }, {
-        ionicon: 'laptop-outline',
+        icon: 'laptop',
         imageRounded: true,
         text: 'Alle Funktionen sind an jedem beliebigen Standort mit einem internetfähigen Gerät über den Browser verfügbar.',
     }, {
-        ionicon: 'people-outline',
+        icon: 'people',
         imageRounded: true,
         text: 'Angenehmer Arbeitseinstieg dank einer übersichtlichen Darstellung aller erfassten Personen, Fälle und einzelner Dossiers.',
     }, {
-        ionicon: 'search-outline',
+        icon: 'search',
         imageRounded: true,
         text: 'Eine intelligente Filtersuche erlaubt es, präzise und blitzschnell nach Inhalten zu suchen.',
     }, {
-        ionicon: 'person-outline',
+        icon: 'person',
         imageRounded: true,
         text: 'Falldossiers zeigen alle relevanten Daten auf einen Blick. Eine chronologische Timeline zeigt alle erfassten Ereignisse.',
     }, {
-        ionicon: 'stats-chart-outline',
+        icon: 'bar-chart',
         imageRounded: true,
         text: 'Per Knopfdruck können zu jeder beliebigen Zeitspanne Statistiken mit attraktiven Grafiken und Tabellen erstellt werden.',
     }, {
-        ionicon: 'settings-outline',
+        icon: 'gear',
         imageRounded: true,
         text: 'SafeLog lässt sich den Bedürfnissen anpassen. Weitere Module werden von AppVision offeriert und implementiert.',
     }, {
-        ionicon: 'server-outline',
+        icon: 'server',
         imageRounded: true,
         text: 'Alle Daten werden in einem zertifizierten Schweizer Datencenter gespeichert. Der Betrieb erfolgt mit erneuerbarer Energie.',
     }, {
-        ionicon: 'shield-checkmark-outline',
+        icon: 'shield-check',
         imageRounded: true,
         text: 'Sämtliche Verbindungen zu SafeLog sind verschlüsselt. Ein optionales zweistufiges Login per SMS sorgt für höchste' +
             ' Sicherheit.',
