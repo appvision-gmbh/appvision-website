@@ -28,21 +28,21 @@
             max-width: $width-medium;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: $card-deck-margin;
+            margin-bottom: $card-group-margin;
         }
 
         @include media-breakpoint-up(lg) {
             display: flex;
             flex-flow: row wrap;
-            margin-right: -$card-deck-margin;
-            margin-left: -$card-deck-margin;
+            margin-right: -$card-group-margin;
+            margin-left: -$card-group-margin;
 
             .card {
                 // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
                 flex: 1 0 0%;
-                margin-right: $card-deck-margin;
+                margin-right: $card-group-margin;
                 margin-bottom: 0; // Override the default
-                margin-left: $card-deck-margin;
+                margin-left: $card-group-margin;
             }
         }
     }
