@@ -38,7 +38,7 @@
                 <span *ngIf="item.imageText">{{ item.imageText }}</span>
             </div>
             <div *ngIf="item.title || item.text" class="text"
-                 [ngClass]="!item.ionicon && !item.imageSrc && !item.imageText ? 'pl-0' : ''">
+                 [ngClass]="!item.ionicon && !item.imageSrc && !item.imageText ? 'ps-0' : ''">
                 <p><strong *ngIf="item.title">{{ item.title }}: </strong><span [innerHTML]="item.text"></span></p>
             </div>
         </div>

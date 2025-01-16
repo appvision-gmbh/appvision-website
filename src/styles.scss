@@ -20,6 +20,13 @@ h1, h2, h3, h4, h5 {
     font-weight: $font-weight-bold;
 }
 
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 @include media-breakpoint-down(xs) {
     h1 {
