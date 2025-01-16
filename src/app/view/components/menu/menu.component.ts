@@ -7,6 +7,7 @@ type PageUrl = 'safelog' | 'services' | 'company' | '';
     selector: 'app-menu',
     templateUrl: './menu.component.html',
     styleUrls: ['./menu.component.scss'],
+    standalone: false
 })
 export class MenuComponent  {
 

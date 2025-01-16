@@ -23,6 +23,7 @@ export type GridItem = {
     selector: 'app-grid[items]',
     templateUrl: './grid.component.html',
     styleUrls: ['./grid.component.scss'],
+    standalone: false
 })
 export class GridComponent {
 
