@@ -29,15 +29,6 @@ a {
     }
 }
 
-@include media-breakpoint-down(xs) {
-    h1 {
-        font-size: $font-size-base * 2;
-    }
-    h2 {
-        font-size: $font-size-base * 1.875;
-    }
-}
-
 .font-size-lg {
     font-size: $font-size-lg;
 }
@@ -67,6 +58,11 @@ strong {
 .container {
     min-width: $width-small;
     max-width: map-get($container-max-widths, xl);
+
+    @include media-breakpoint-up(sm) {
+        padding-left: $spacer-5;
+        padding-right: $spacer-5;
+    }
 
     img {
         max-width: 100%;

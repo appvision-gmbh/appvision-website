@@ -4,10 +4,6 @@
     .row {
         .row-col {
 
-            @include media-breakpoint-down(sm) {
-
-            }
-
             .image {
                 overflow: hidden;
 
@@ -15,11 +11,11 @@
                     width: 100%;
                     background-color: $white;
 
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(md) {
                         max-width: 350px;
                     }
 
-                    @include media-breakpoint-down(xs) {
+                    @include media-breakpoint-down(sm) {
                         max-width: 250px;
                     }
 

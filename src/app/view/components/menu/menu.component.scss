@@ -12,8 +12,6 @@ nav {
     }
 
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
     .navbar-brand {
@@ -22,7 +20,7 @@ nav {
         }
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         background: rgba($primary, 1) !important;
 
         .navbar-nav {
