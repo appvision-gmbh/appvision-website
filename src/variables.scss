@@ -5,6 +5,8 @@ $font-weight-base: 300;
 $font-weight-bold: 600;
 $font-weight-bolder: 700;
 $card-title-color: $primary;
+$card-spacer-x: 20px;
+$card-spacer-y: 20px;
 $enable-negative-margins: true;
 
 @import '../node_modules/bootstrap/scss/functions';

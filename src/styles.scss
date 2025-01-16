@@ -66,6 +66,7 @@ strong {
 
 .container {
     min-width: $width-small;
+    max-width: map-get($container-max-widths, xl);
 
     img {
         max-width: 100%;

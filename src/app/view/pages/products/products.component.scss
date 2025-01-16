@@ -23,25 +23,27 @@
     }
 
     .cards-prices {
+        $margin: 1rem;
+
         .card {
             max-width: $width-medium;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: $card-group-margin;
+            margin-bottom: $margin;
         }
 
         @include media-breakpoint-up(lg) {
             display: flex;
             flex-flow: row wrap;
-            margin-right: -$card-group-margin;
-            margin-left: -$card-group-margin;
+            margin-right: -$margin;
+            margin-left: -$margin;
 
             .card {
                 // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
-                flex: 1 0 0%;
-                margin-right: $card-group-margin;
+                flex: 1 0 0;
+                margin-right: $margin;
                 margin-bottom: 0; // Override the default
-                margin-left: $card-group-margin;
+                margin-left: $margin;
             }
         }
     }
