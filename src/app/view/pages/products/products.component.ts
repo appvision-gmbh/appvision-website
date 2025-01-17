@@ -8,7 +8,7 @@ import { GridItem } from '../../components/grid/grid.component';
     styleUrls: ['./products.component.scss'],
     standalone: false
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent {
 
     readonly features: GridItem[] = [{
         imageSrc: 'assets/products/safelog/swiss-flag-outline.png',
@@ -137,10 +137,5 @@ export class ProductsComponent implements OnInit {
         text: 'Nun sind Sie bereit für SafeLog und können die Webapplikation über jeden Internet-Browser nutzen! Auf Anfrage bieten wir' +
             ' Ihnen zur Einführung einen kostenlosen Schulungstag vor Ort an.',
     }];
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
 
 }

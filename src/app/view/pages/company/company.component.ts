@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { GridItem } from '../../components/grid/grid.component';
 
@@ -6,9 +6,9 @@ import { GridItem } from '../../components/grid/grid.component';
     selector: 'app-company',
     templateUrl: './company.component.html',
     styleUrls: ['./company.component.scss'],
-    standalone: false
+    standalone: false,
 })
-export class CompanyComponent implements OnInit {
+export class CompanyComponent {
 
     people: GridItem[] = [{
         colCssClass: 'col-lg-4 col-md-4 col-sm-6 mx-auto',
@@ -131,10 +131,5 @@ export class CompanyComponent implements OnInit {
         title: 'Stiftung BaselMedia',
         text: 'Grösstes unabhängiges Medienunternehmen in Basel.',
     }];
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
 
 }
