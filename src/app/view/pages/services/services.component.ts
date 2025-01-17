@@ -57,7 +57,7 @@ export class ServicesComponent implements OnInit {
             imageBorder: true,
             imagePadding: '0 30px',
             title: 'Rotblau-App',
-            text: 'Die von uns entwickelte Rotblau-App ist mit über 110\'000 Downloads eine der beliebtesten Apps der Schweiz.',
+            text: 'Die von uns entwickelte Rotblau-App ist mit über 130\'000 Downloads eine der beliebtesten Apps der Schweiz.',
             url: 'https://about.rotblau.app',
         },
         {

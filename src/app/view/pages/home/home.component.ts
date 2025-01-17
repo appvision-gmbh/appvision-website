@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
         icon: 'phone',
         imageRounded: true,
         title: 'App',
-        text: 'Das Wort «App» in unserem Namen steht für unsere grosse Erfahrung in der Konzeption und Entwicklung von mobilen' +
-            ' Applikationen, Webapplikationen und Software. ',
+        text: 'Das Wort «App» in unserem Namen steht stellvertretend für unsere grosse Erfahrung in der Konzeption und Entwicklung von' +
+            ' mobilen Applikationen, Webapplikationen und Software. ',
     }, {
         icon: 'eye',
         imageRounded: true,
