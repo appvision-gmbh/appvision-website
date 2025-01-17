@@ -6,6 +6,7 @@ import { GridItem } from '../../components/grid/grid.component';
     selector: 'app-services',
     templateUrl: './services.component.html',
     styleUrls: ['./services.component.scss'],
+    standalone: false
 })
 export class ServicesComponent implements OnInit {
 
@@ -18,21 +19,21 @@ export class ServicesComponent implements OnInit {
                 ' rund um Ihre Bedürfnisse zu SafeLog.',
         },
         {
-            ionicon: 'code-outline',
+            icon: 'code',
             imageRounded: true,
             title: 'Software',
             text: 'Dank unserer langjährigen Expertise in der Software-Architektur und -Entwicklung setzen wir Ihr Projekt effizient' +
                 ' um. Wir sind spezialisiert auf Apps und moderne Webtechnologien.',
         },
         {
-            ionicon: 'server-outline',
+            icon: 'database',
             imageRounded: true,
             title: 'Hosting',
             text: 'Wir geben Ihrem Webprojekt ein Zuhause. Im zertifizierten Datencenter der Industriellen Werke Basel (IWB) betreiben' +
                 ' wir eine eigene Server-Infrastruktur.',
         },
         {
-            ionicon: 'bulb-outline',
+            icon: 'lightbulb',
             imageRounded: true,
             title: 'Consulting',
             text: 'Wir analysieren Ihre Bedürfnisse, um eine bestmögliche Lösung für Ihr Projekt zu definieren. Wir unterstützen Sie bei' +
@@ -56,7 +57,7 @@ export class ServicesComponent implements OnInit {
             imageBorder: true,
             imagePadding: '0 30px',
             title: 'Rotblau-App',
-            text: 'Die von uns entwickelte Rotblau-App ist mit über 110\'000 Downloads eine der beliebtesten Apps der Schweiz.',
+            text: 'Die von uns entwickelte Rotblau-App ist mit über 130\'000 Downloads eine der beliebtesten Apps der Schweiz.',
             url: 'https://about.rotblau.app',
         },
         {

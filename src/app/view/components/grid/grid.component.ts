@@ -5,9 +5,10 @@ export type GridItem = {
     // The column formatting
     colCssClass?: string, // grid only
     // Image
-    imageSrc?: string, // use either imageSrc, ionicon or imageText
-    ionicon?: string, // use either imageSrc, ionicon or imageText
-    imageText?: string, // use either imageSrc, ionicon or imageText
+    imageSrc?: string, // use either imageSrc, icon or imageText
+    icon?: string, // use either imageSrc, icon or imageText
+    imageText?: string, // use either imageSrc, icon or imageText
+    imageCss?: string, // CSS class for the image background
     imageRounded?: boolean,
     imageBorder?: boolean,
     imagePadding?: string, // grid only
@@ -23,6 +24,7 @@ export type GridItem = {
     selector: 'app-grid[items]',
     templateUrl: './grid.component.html',
     styleUrls: ['./grid.component.scss'],
+    standalone: false
 })
 export class GridComponent {
 
@@ -62,7 +64,7 @@ export class GridComponent {
             str += ' url';
         }
 
-        return str;
+        return str + " " + (item.imageCss || "");
 
     }
 

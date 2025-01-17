@@ -6,23 +6,24 @@ import { GridItem } from '../../components/grid/grid.component';
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
 
     welcomeItems: GridItem[] = [{
-        ionicon: 'phone-portrait-outline',
+        icon: 'phone',
         imageRounded: true,
         title: 'App',
-        text: 'Das Wort «App» in unserem Namen steht für unsere grosse Erfahrung in der Konzeption und Entwicklung von mobilen' +
-            ' Applikationen, Webapplikationen und Software. ',
+        text: 'Das Wort «App» in unserem Namen steht stellvertretend für unsere grosse Erfahrung in der Konzeption und Entwicklung von' +
+            ' mobilen Applikationen, Webapplikationen und Software. ',
     }, {
-        ionicon: 'eye-outline',
+        icon: 'eye',
         imageRounded: true,
         title: 'Vision',
         text: 'Wir unterstützen Sie, Ihre «Vision» in die Realität umzusetzen. Mithilfe unseres fundierten Know-hows in' +
             ' zukunftsorientierten Technologien entwickeln wir Ihr Wunschprojekt professionell und effizient.',
     }, {
-        ionicon: 'briefcase-outline',
+        icon: 'briefcase',
         imageRounded: true,
         title: 'GmbH',
         text: 'Unser Unternehmen mit Sitz in Reinach BL steht Ihnen zur Verfügung. Gerne beraten wir Sie persönlich und' +

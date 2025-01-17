@@ -2,9 +2,8 @@
 
 .container {
 
-    ion-icon {
+    .bi {
         position: relative;
-        top: 0.1875rem;
         color: $primary;
     }
 
@@ -24,25 +23,27 @@
     }
 
     .cards-prices {
+        $margin: 1rem;
+
         .card {
             max-width: $width-medium;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: $card-deck-margin;
+            margin-bottom: $margin;
         }
 
         @include media-breakpoint-up(lg) {
             display: flex;
             flex-flow: row wrap;
-            margin-right: -$card-deck-margin;
-            margin-left: -$card-deck-margin;
+            margin-right: -$margin;
+            margin-left: -$margin;
 
             .card {
                 // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
-                flex: 1 0 0%;
-                margin-right: $card-deck-margin;
+                flex: 1 0 0;
+                margin-right: $margin;
                 margin-bottom: 0; // Override the default
-                margin-left: $card-deck-margin;
+                margin-left: $margin;
             }
         }
     }

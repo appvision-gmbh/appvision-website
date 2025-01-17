@@ -6,33 +6,18 @@ import { GridItem } from '../../components/grid/grid.component';
     selector: 'app-company',
     templateUrl: './company.component.html',
     styleUrls: ['./company.component.scss'],
+    standalone: false
 })
 export class CompanyComponent implements OnInit {
 
     people: GridItem[] = [{
-        colCssClass: 'col-lg-4 col-md-4 col-sm-6',
+        colCssClass: 'col-lg-4 col-md-4 col-sm-6 mx-auto',
         imageSrc: 'assets/people/aeschlimann.jpg',
         imageBorder: true,
         imageRounded: true,
         imagePadding: '0 10%',
         title: 'Andreas Aeschlimann M Sc',
         text: 'Chief Executive Officer',
-    }, {
-        colCssClass: 'col-lg-4 col-md-4 col-sm-6',
-        imageSrc: 'assets/people/huck.jpg',
-        imageBorder: true,
-        imageRounded: true,
-        imagePadding: '0 10%',
-        title: 'Dr. Antal Huck',
-        text: 'Chief Technology Officer',
-    }, {
-        colCssClass: 'col-lg-4 col-md-4 col-sm-6',
-        imageSrc: 'assets/people/studer.jpg',
-        imageBorder: true,
-        imageRounded: true,
-        imagePadding: '0 10%',
-        title: 'Melissa Studer M Sc',
-        text: 'Chief Administrative Officer',
     }];
 
     customersData: GridItem[] = [{
@@ -100,18 +85,18 @@ export class CompanyComponent implements OnInit {
         title: 'Orpheus-Reisen',
     }, {
         colCssClass: 'col-lg-3 col-md-4 col-sm-6',
-        imageSrc: 'assets/customers/otb-applications.png',
-        imageBorder: true,
-        imageRounded: true,
-        imagePadding: '0 30px',
-        title: 'OTB Applications',
-    }, {
-        colCssClass: 'col-lg-3 col-md-4 col-sm-6',
         imageSrc: 'assets/customers/st-jakob-park.png',
         imageBorder: true,
         imageRounded: true,
         imagePadding: '0 30px',
         title: 'Shopping Center St. Jakob-Park',
+    }, {
+        colCssClass: 'col-lg-3 col-md-4 col-sm-6',
+        imageSrc: 'assets/customers/telebasel.png',
+        imageBorder: true,
+        imageRounded: true,
+        imagePadding: '0 30px',
+        title: 'Telebasel',
     }, {
         colCssClass: 'col-lg-3 col-md-4 col-sm-6',
         imageSrc: 'assets/customers/universitaet-basel.png',
@@ -122,21 +107,29 @@ export class CompanyComponent implements OnInit {
     }];
 
     partnersData: GridItem[] = [{
-        colCssClass: 'offset-lg-3 col-lg-3 offset-md-2 col-md-4 col-sm-6',
+        colCssClass: 'ms-auto col-lg-3 col-md-4 col-sm-6',
         imageSrc: 'assets/partners/nexirius.png',
         imageBorder: true,
         imageRounded: true,
         imagePadding: '0 30px',
         title: 'Nexirius GmbH',
-        text: 'Software-Firma mit über 25 Jahren Erfahrung.',
+        text: 'Software-Firma mit über 30 Jahren Erfahrung.',
     }, {
         colCssClass: 'col-lg-3 col-md-4 col-sm-6',
-        imageSrc: 'assets/partners/otb-applications.png',
+        imageSrc: 'assets/partners/rotblau.png',
         imageBorder: true,
         imageRounded: true,
         imagePadding: '0 30px',
-        title: 'OTB Applications',
-        text: 'Distributionspartner von SafeLog für Kitas, Schulen, Heime usw.',
+        title: 'Rotblau GmbH',
+        text: 'Beliebteste Fan-App eines Fussballclubs in der Schweiz.',
+    }, {
+        colCssClass: 'me-auto col-lg-3 col-md-4 col-sm-6',
+        imageSrc: 'assets/partners/baselmedia.png',
+        imageBorder: true,
+        imageRounded: true,
+        imagePadding: '0 30px',
+        title: 'Stiftung BaselMedia',
+        text: 'Grösstes unabhängiges Medienunternehmen in Basel.',
     }];
 
     constructor() { }

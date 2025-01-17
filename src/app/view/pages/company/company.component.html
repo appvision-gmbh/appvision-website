@@ -4,7 +4,7 @@
     <div class="container py-5 text-center">
 
         <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Über AppVision</h1>
+            <h1 class="display-6 fw-bold text-uppercase">Über AppVision</h1>
             <p class="max-width-large text-muted">Ihre Vision ist unsere Mission.</p>
         </div>
 
@@ -19,12 +19,27 @@
     <div class="container py-5 text-center">
 
         <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Management</h1>
-            <p class="max-width-large text-muted">
-                Unser kompetentes Team wird geleitet von:</p>
+            <h1 class="display-6 fw-bold text-uppercase">Management</h1>
+            <p class="max-width-large text-muted">Unser kompetentes Team wird geleitet von:</p>
         </div>
 
-        <app-grid [items]="people" [format]="'grid'"></app-grid>
+        <div class="row text-sm-start">
+
+            <div class="offset-4 col-4 offset-sm-0 offset-md-1 col-sm-3">
+                <img [src]="'assets/people/aeschlimann.jpg'" alt="image" class="rounded-circle"/>
+            </div>
+            <div class="col-sm-9 col-md-7 mt-3 mt-sm-0 align-content-center">
+                <h5>Andreas Aeschlimann M Sc</h5>
+                <p class="fw-bold text-primary">Chief Executive Officer</p>
+                <p>
+                    Andreas Aeschlimann ist Gründer und Geschäftsführer der AppVision GmbH.
+                    Im Unternehmen bringt er Erfahrung und Leidenschaft aus über 20 Jahren Softwareentwicklung ein.
+                    Dank seines Mathematikstudiums an der Universität Basel verfügt er über eine hervorragende analytische Denkweise und ein tiefes Verständnis für komplexe Zusammenhänge.
+                    Neben seiner Tätigkeit als Geschäftsführer engagiert sich Aeschlimann seit vielen Jahren in der Lehre, wo er sein Wissen mit Freude weitergibt.
+                </p>
+            </div>
+
+        </div>
 
     </div>
 </div>
@@ -33,7 +48,7 @@
     <div class="container py-5 text-center">
 
         <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Kunden</h1>
+            <h1 class="display-6 fw-bold text-uppercase">Kunden</h1>
             <p class="max-width-large text-muted">Nachfolgend finden Sie einen Auszug unserer Kunden.</p>
         </div>
 
@@ -46,8 +61,8 @@
     <div class="container py-5 text-center">
 
         <div class="mb-5">
-            <h1 class="font-weight-bold text-uppercase">Partner</h1>
-            <p class="max-width-large text-muted">Zu unseren wichtigsten Partnern gehören folgende Firmen.</p>
+            <h1 class="display-6 fw-bold text-uppercase">Partner</h1>
+            <p class="max-width-large text-muted">Zu unseren wichtigsten Partnern gehören folgende Unternehmen.</p>
         </div>
 
         <app-grid [items]="partnersData" [format]="'grid'"></app-grid>
