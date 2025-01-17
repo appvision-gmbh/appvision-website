@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { GridItem } from '../../components/grid/grid.component';
 
@@ -6,9 +6,9 @@ import { GridItem } from '../../components/grid/grid.component';
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
-    standalone: false
+    standalone: false,
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
     welcomeItems: GridItem[] = [{
         icon: 'phone',
@@ -49,10 +49,5 @@ export class HomeComponent implements OnInit {
         url: 'services',
         urlText: 'Mehr dazu',
     }];
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
 
 }

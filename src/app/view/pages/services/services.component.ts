@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { GridItem } from '../../components/grid/grid.component';
 
@@ -6,9 +6,9 @@ import { GridItem } from '../../components/grid/grid.component';
     selector: 'app-services',
     templateUrl: './services.component.html',
     styleUrls: ['./services.component.scss'],
-    standalone: false
+    standalone: false,
 })
-export class ServicesComponent implements OnInit {
+export class ServicesComponent {
 
     services: GridItem[] = [
         {
@@ -100,10 +100,5 @@ export class ServicesComponent implements OnInit {
         {imageSrc: 'assets/technologies/swift.png', imageBorder: true},
         {imageSrc: 'assets/technologies/typescript.png', imageBorder: true},
     ];
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
 
 }
