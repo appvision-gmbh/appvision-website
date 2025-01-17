@@ -15,4 +15,4 @@ jobs:
           build_configuration: production
           base_href: /
           deploy_branch: live/gh-pages
-          angular_dist_build_folder: dist/appvision-website
+          angular_dist_build_folder: dist/appvision-website/browser
