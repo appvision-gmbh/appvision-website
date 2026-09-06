@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 
 export type GridItem = {
@@ -24,6 +24,7 @@ export type GridItem = {
     selector: 'app-grid[items]',
     templateUrl: './grid.component.html',
     styleUrls: ['./grid.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class GridComponent {

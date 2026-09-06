@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { GridItem } from '../../components/grid/grid.component';
 
@@ -6,6 +6,7 @@ import { GridItem } from '../../components/grid/grid.component';
     selector: 'app-services',
     templateUrl: './services.component.html',
     styleUrls: ['./services.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
 })
 export class ServicesComponent {
